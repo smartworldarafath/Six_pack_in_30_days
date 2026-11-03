@@ -1570,52 +1570,9 @@
 .method public static final O(Landroid/content/Context;)Z
     .locals 1
 
-    if-nez p0, :cond_0
+    const/4 v0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p0}, Le95;->b0(Landroid/content/Context;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_2
-
-    sget-object p0, Lx04;->a:Lx04;
-
-    const-string v0, "sixpack.sixpackabs.absworkout.removeads"
-
-    invoke-virtual {p0, v0}, Lx04;->a(Ljava/lang/String;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    invoke-static {}, Law4;->p()Z
-
-    move-result p0
-
-    if-nez p0, :cond_2
-
-    invoke-static {}, Le95;->R()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_2
-    :goto_1
-    const/4 p0, 0x1
-
-    return p0
+    return v0
 .end method
 
 .method public static final P(Landroid/content/Context;)Lfl6;
@@ -2322,23 +2279,7 @@
 .method public static final b0(Landroid/content/Context;)Z
     .locals 2
 
-    const/4 v0, 0x0
-
-    :try_start_0
-    const-string v1, "remove_ads"
-
-    invoke-static {p0, v1, v0}, Lem7;->L(Landroid/content/Context;Ljava/lang/String;Z)Z
-
-    move-result p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return p0
-
-    :catch_0
-    move-exception p0
-
-    invoke-static {p0}, Le95;->Z(Ljava/lang/Throwable;)V
+    const/4 v0, 0x1
 
     return v0
 .end method

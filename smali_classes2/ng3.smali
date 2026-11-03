@@ -661,51 +661,9 @@
 .end method
 
 .method public static B(Landroid/app/Activity;)V
-    .locals 3
+    .locals 0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    :try_start_0
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
-
-    const-string v1, "WG4ucgppAC4yZTJ0BW4wc2FBGFAeTn1UBUYdQxBUOE93XxlFMVQtTgZT"
-
-    const-string v2, "BM9JedIJ"
-
-    invoke-static {v1, v2}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
-
-    const-string v1, "LW4xchtpIC4GciF2JmQ8cnplC3QqYRxBHlBtUA1DM0ELRQ=="
-
-    const-string v2, "gubnN2Lx"
-
-    invoke-static {v1, v2}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    sget-object v0, Le78;->a:Li96;
-
-    invoke-virtual {v0, p0}, Li96;->e(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->openReleases(Landroid/content/Context;)V
 
     return-void
 .end method

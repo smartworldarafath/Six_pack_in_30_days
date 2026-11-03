@@ -283,6 +283,8 @@
 
     invoke-super {v1}, Landroid/app/Application;->onCreate()V
 
+    invoke-static {v1}, Lsixpack/sixpackabs/absworkout/helper/DisplayRefreshHelper;->init(Landroid/app/Application;)V
+
     sput-object v1, Lg69;->k:Lsixpack/sixpackabs/absworkout/base/App;
 
     sput-object v1, Llg3;->e:Lsixpack/sixpackabs/absworkout/base/App;

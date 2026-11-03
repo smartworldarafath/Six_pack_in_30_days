@@ -3587,6 +3587,10 @@
 
     invoke-virtual {p1, p0}, Luw;->l(Landroidx/appcompat/app/AppCompatActivity;)V
 
+    const/4 p1, 0x0
+
+    invoke-static {p0, p1}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->checkForUpdate(Landroid/content/Context;Z)V
+
     const-string p1, "N2EjbjNjJGkodHk="
 
     const-string v0, "qpZJRP1J"

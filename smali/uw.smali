@@ -121,148 +121,35 @@
 .end method
 
 .method public static b()Z
-    .locals 6
+    .locals 1
 
-    const/4 v0, 0x0
-
-    :try_start_0
-    invoke-static {}, Luw;->j()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-static {}, Lg69;->v()Landroid/content/Context;
-
-    move-result-object v1
-
-    const/4 v2, 0x3
-
-    invoke-static {v2, v1}, Llg3;->n0(ILandroid/content/Context;)I
-
-    move-result v1
-
-    sget-object v2, Lhw;->e:Lhw;
-
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    sget-object v3, Lhw;->z:Lki3;
-
-    sget-object v4, Lhw;->f:[Lkotlin/reflect/KProperty;
-
-    const/16 v5, 0x18
-
-    aget-object v4, v4, v5
-
-    invoke-virtual {v3, v2, v4}, Lq3;->c(Ljava/lang/Object;Lkotlin/reflect/KProperty;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    const-string v3, "LA=="
-
-    const-string v4, "a5lsa9eD"
-
-    invoke-static {v3, v4}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    filled-new-array {v3}, [Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x6
-
-    invoke-static {v2, v3, v0, v4}, Los7;->I0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v2, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-static {}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->hasUpdate()Z
 
     move-result v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    return v0
-
-    :catchall_0
-    move-exception v1
-
-    goto :goto_0
-
-    :cond_0
-    return v0
-
-    :goto_0
-    sget-object v2, Le78;->a:Li96;
-
-    invoke-virtual {v2, v1}, Li96;->e(Ljava/lang/Throwable;)V
 
     return v0
 .end method
 
 .method public static c()V
-    .locals 4
+    .locals 2
 
-    sget-object v0, Luw;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Luw;->j:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    if-eqz v0, :cond_0
 
-    move-result v1
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    move-result-object v0
 
-    if-eqz v1, :cond_0
+    check-cast v0, Landroid/content/Context;
 
-    sget-object v0, Le78;->a:Li96;
+    if-eqz v0, :cond_0
 
-    sget-object v1, Luw;->b:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Li96;->r(Ljava/lang/String;)V
-
-    const-string v1, "UmgxYy1VF2ccYSVlUCB8Pkc-Zz5tPkcgBHM6aCljCmlfZ3Q9ZnQVdQssYWkNbi1yZQ=="
-
-    const-string v3, "myLaETfe"
-
-    invoke-static {v1, v3}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2}, Li96;->u(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
+    invoke-static {v0, v1}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->checkForUpdate(Landroid/content/Context;Z)V
 
     :cond_0
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    sget-object v0, Lvj8;->a:Lsixpack/sixpackabs/absworkout/base/App;
-
-    if-eqz v0, :cond_1
-
-    new-instance v1, Ldb5;
-
-    const/16 v2, 0xe
-
-    invoke-direct {v1, v2}, Ldb5;-><init>(I)V
-
-    invoke-static {v0, v1}, Lvj8;->a(Landroid/content/Context;Loj8;)V
-
-    :cond_1
     return-void
 .end method
 
@@ -361,450 +248,59 @@
 .method public static j()Z
     .locals 1
 
-    invoke-static {}, Lb76;->s()Z
+    invoke-static {}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->hasUpdate()Z
 
     move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Luw;->k()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public static k()Z
-    .locals 2
+    .locals 1
 
-    sget-object v0, Lvj8;->d:Llw;
-
-    if-eqz v0, :cond_1
-
-    invoke-static {v0}, Lq75;->l(Llw;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    invoke-static {v0}, Lq75;->k(Llw;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    invoke-static {v0}, Lq75;->Y(Llw;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    invoke-static {v0}, Lq75;->b0(Llw;)Z
+    invoke-static {}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->hasUpdate()Z
 
     move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_1
-    const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public static m()V
-    .locals 6
+    .locals 2
 
-    sget-object v0, Le78;->a:Li96;
+    sget-object v0, Luw;->j:Ljava/lang/ref/WeakReference;
 
-    sget-object v1, Luw;->b:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v1}, Li96;->r(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    const-string v2, "G3QMcixJWXM1YSpsLXAnOm9nJyA1bxJpInMgYT1sUWEYcA=="
+    move-result-object v0
 
-    const-string v3, "6WhmX7vq"
+    check-cast v0, Landroid/content/Context;
 
-    invoke-static {v2, v3}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    move-result-object v2
+    const/4 v1, 0x1
 
-    const/4 v3, 0x0
-
-    new-array v4, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v2, v4}, Li96;->i(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    sget-object v2, Lvj8;->d:Llw;
-
-    if-nez v2, :cond_0
-
-    invoke-virtual {v0, v1}, Li96;->r(Ljava/lang/String;)V
-
-    const-string v1, "P3Q0cgBJKnMCYSJsDnApOnRhA3ANcFZhB2URbldvUmk_IDt1GGxoIB9nIG89ZXlpOnMHYTRs"
-
-    const-string v2, "AgXTsX1r"
-
-    invoke-static {v1, v2}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v2, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2}, Li96;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
+    invoke-static {v0, v1}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->checkForUpdate(Landroid/content/Context;Z)V
 
     :cond_0
-    invoke-static {v2}, Lq75;->k(Llw;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_1
-
-    invoke-virtual {v0, v1}, Li96;->r(Ljava/lang/String;)V
-
-    invoke-static {v2}, Lq75;->M(Llw;)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "P3Q0cgBJKnMCYSJsDnApOnRjEm54bl10Q0krcxthB2xgIDxnGm82ZVZpIHM7YTVsu7z_IA=="
-
-    const-string v5, "3OEZcEok"
-
-    invoke-static {v4, v5, v1, v2}, Lpd6;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v2, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2}, Li96;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-
-    :cond_1
-    invoke-static {}, Luw;->f()V
-
     return-void
 .end method
 
 .method public static o(Landroid/content/Context;)Z
-    .locals 9
+    .locals 2
 
-    sget-object v0, Luw;->b:Ljava/lang/String;
+    const/4 v0, 0x1
 
-    sget-object v1, Lvj8;->d:Llw;
+    invoke-static {p0, v0}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->checkForUpdate(Landroid/content/Context;Z)V
 
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    sget-object p0, Le78;->a:Li96;
-
-    invoke-virtual {p0, v0}, Li96;->r(Ljava/lang/String;)V
-
-    const-string v0, "QnQ1cjJVF2ccYSVlUCAjcAlVKWQydBxJD2ZaIDBzGG5EbDgsZmkAbgFyZQ=="
-
-    const-string v1, "a5Y8fSyE"
-
-    invoke-static {v0, v1}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    new-array v1, v2, [Ljava/lang/Object;
-
-    invoke-virtual {p0, v0, v1}, Li96;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return v2
-
-    :cond_0
-    invoke-static {v1}, Lq75;->k(Llw;)Z
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    if-eqz v3, :cond_1
-
-    sget-object p0, Le78;->a:Li96;
-
-    invoke-virtual {p0, v0}, Li96;->r(Ljava/lang/String;)V
-
-    const-string v0, "P3Q0cgBVNGcEYSpldSA6YTpJHXMsYV5sQz16dB91HCxsZDogFXA0IB9uPXQubGw="
-
-    const-string v1, "nsXocZmy"
-
-    invoke-static {v0, v1}, Lt49;->p(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    new-array v1, v2, [Ljava/lang/Object;
-
-    invoke-virtual {p0, v0, v1}, Li96;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    invoke-static {}, Luw;->f()V
-
-    return v4
-
-    :cond_1
-    invoke-static {v1}, Lq75;->l(Llw;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    sget-object p0, Le78;->a:Li96;
-
-    invoke-virtual {p0, v0}, Li96;->r(Ljava/lang/String;)V
-
-    invoke-static {v1}, Lq75;->M(Llw;)Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "QnQ1cjJVF2ccYSVlUCAhYRcgN28nICxwI2FBZWYgMGdfbyZlZnUXZA90JO_WjCA="
-
-    const-string v4, "G5JY4qlH"
-
-    invoke-static {v3, v4, v0, v1}, Lpd6;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
-
-    move-result-object v0
-
-    new-array v1, v2, [Ljava/lang/Object;
-
-    invoke-virtual {p0, v0, v1}, Li96;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return v2
-
-    :cond_2
-    invoke-static {v1}, Lq75;->j(Llw;)Z
+    invoke-static {}, Lsixpack/sixpackabs/absworkout/helper/GitHubUpdateHelper;->hasUpdate()Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
-
-    sget-object v0, Lp;->a:Ljava/lang/String;
-
-    const-string v0, "enable_upgrade_immediate"
-
-    const-string v3, "N"
-
-    invoke-static {v0, v3}, Lem7;->b0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v3, "Y"
-
-    invoke-static {v0, v3}, Lra4;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    move v0, v4
-
-    goto :goto_0
-
-    :cond_3
-    move v0, v2
-
-    :goto_0
-    sget-object v3, Luw;->i:Lqj8;
-
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string v5, "startUpgrade :"
-
-    if-eqz v0, :cond_4
-
-    :try_start_0
-    const-string v6, "immediate"
-
-    goto :goto_1
-
-    :cond_4
-    const-string v6, "flexible"
-
-    :goto_1
-    invoke-virtual {v5, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    iget-object v5, v3, Lqj8;->a:Lva;
-
-    if-nez v5, :cond_5
-
-    return v2
-
-    :cond_5
-    invoke-static {v1}, Lq75;->c0(Llw;)Z
-
-    move-result v5
-
-    invoke-static {v1}, Lq75;->i(Llw;)Z
-
-    move-result v6
-
-    invoke-static {v1}, Lq75;->j(Llw;)Z
-
-    move-result v7
-
-    const/4 v8, 0x2
-
-    if-eqz v5, :cond_a
-
-    if-nez v6, :cond_6
-
-    if-nez v7, :cond_6
-
-    goto :goto_3
-
-    :cond_6
-    if-nez v0, :cond_9
-
-    if-eqz v6, :cond_8
-
-    :cond_7
-    move v0, v8
-
-    goto :goto_4
-
-    :cond_8
-    :goto_2
-    move v0, v4
-
-    goto :goto_4
-
-    :cond_9
-    if-eqz v7, :cond_7
-
-    goto :goto_2
-
-    :cond_a
-    :goto_3
-    move v0, v2
-
-    :goto_4
-    iput v0, v3, Lqj8;->c:I
-
-    if-nez v0, :cond_b
-
-    return v2
-
-    :cond_b
-    if-ne v0, v8, :cond_c
-
-    move v0, v4
-
-    goto :goto_5
-
-    :cond_c
-    move v0, v2
-
-    :goto_5
-    iget-object v5, v3, Lqj8;->a:Lva;
-
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    xor-int/2addr v0, v4
-
-    invoke-virtual {v1, v0}, Llw;->a(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_e
-
-    invoke-static {p0}, Lvj8;->b(Landroid/content/Context;)Ldla;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_e
-
-    invoke-static {v0}, Lz9b;->c(I)Lq8b;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lq8b;->a()Lz9b;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Llw;->b(Lz9b;)Landroid/app/PendingIntent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_e
-
-    iget-boolean v0, v1, Llw;->i:Z
-
-    if-eqz v0, :cond_d
-
-    goto :goto_6
-
-    :cond_d
-    iput-boolean v4, v1, Llw;->i:Z
-
-    new-instance v0, La10;
-
-    invoke-virtual {v1, p0}, Llw;->b(Lz9b;)Landroid/app/PendingIntent;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, La10;-><init>(Landroid/content/IntentSender;)V
-
-    invoke-virtual {v0}, La10;->a()Landroidx/activity/result/IntentSenderRequest;
-
-    move-result-object p0
-
-    invoke-virtual {v5, p0}, Lva;->a(Ljava/lang/Object;)V
-
-    move p0, v4
-
-    goto :goto_7
-
-    :cond_e
-    :goto_6
-    move p0, v2
-
-    :goto_7
-    iput-boolean p0, v3, Lqj8;->b:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz p0, :cond_f
-
-    return v4
-
-    :cond_f
-    return v2
-
-    :catchall_0
-    sget-object p0, Lvj8;->a:Lsixpack/sixpackabs/absworkout/base/App;
-
-    return v2
+    return v0
 .end method
-
 
 # virtual methods
 .method public final d(Lvp4;)V

@@ -28,7 +28,7 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 5
+    .locals 8
 
     iget v0, p0, Lgq5;->a:I
 
@@ -118,6 +118,26 @@
 
     invoke-virtual {v1, p1, v0}, Lrd1;->i(Lk59;Lk59;)V
 
+    const/4 v5, 0x0
+
+    if-eqz v0, :cond_s0_1
+
+    iget-object v5, v0, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s0_1
+    const/4 v6, 0x0
+
+    if-eqz p1, :cond_s0_2
+
+    iget-object v6, p1, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s0_2
+    iget v7, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->l:I
+
+    const/4 v1, 0x1
+
+    invoke-static {v5, v6, v7, v1}, Lsixpack/sixpackabs/absworkout/helper/TabSliderHelper;->animateTab(Landroid/view/View;Landroid/view/View;II)V
+
     iget-object p1, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->r:Lmr6;
 
     iput-object p1, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->t:Lfg0;
@@ -163,6 +183,26 @@
 
     invoke-virtual {v1, p1, v0}, Lrd1;->i(Lk59;Lk59;)V
 
+    const/4 v5, 0x0
+
+    if-eqz v0, :cond_s1_1
+
+    iget-object v5, v0, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s1_1
+    const/4 v6, 0x0
+
+    if-eqz p1, :cond_s1_2
+
+    iget-object v6, p1, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s1_2
+    iget v7, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->l:I
+
+    const/4 v1, 0x0
+
+    invoke-static {v5, v6, v7, v1}, Lsixpack/sixpackabs/absworkout/helper/TabSliderHelper;->animateTab(Landroid/view/View;Landroid/view/View;II)V
+
     iget-object p1, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->q:Lsa8;
 
     iput-object p1, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->t:Lfg0;
@@ -207,6 +247,26 @@
     iget-object v4, p0, Lj59;->e:Lrd1;
 
     invoke-virtual {v4, p1, v0}, Lrd1;->i(Lk59;Lk59;)V
+
+    const/4 v5, 0x0
+
+    if-eqz v0, :cond_s2_1
+
+    iget-object v5, v0, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s2_1
+    const/4 v6, 0x0
+
+    if-eqz p1, :cond_s2_2
+
+    iget-object v6, p1, Landroidx/fragment/app/b;->I:Landroid/view/View;
+
+    :cond_s2_2
+    iget v7, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->l:I
+
+    const/4 v1, 0x2
+
+    invoke-static {v5, v6, v7, v1}, Lsixpack/sixpackabs/absworkout/helper/TabSliderHelper;->animateTab(Landroid/view/View;Landroid/view/View;II)V
 
     iget-object p1, p0, Lsixpack/sixpackabs/absworkout/NewIndexActivity;->s:Lra7;
 
