@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/black" android:id="@id/tvString" android:paddingTop="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/outfit_regular" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black_30" android:id="@id/tvDesc" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/outfit_regular" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" app:layout_constraintTop_toBottomOf="@id/tvString" />
+    <View android:background="@color/gray_97" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

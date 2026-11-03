@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/llList" android:layout_width="match_parent" android:layout_height="match_parent">
+            <sixpack.sixpackabs.absworkout.views.ImmersiveView android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyExportLogFile" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:id="@id/textView2" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="导出日志文件" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_ab_test" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="AB Test" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyLongUserGuide" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开长用户引导" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyShowAllDialogs" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#ffeb3b" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开所有弹窗" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyLongUserGuideResultCreating" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开引导结果生成页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyLongUserGuideResult" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开长用户引导结果页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="职业是否是【学生】" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchIsStudent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyIAPTransform" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开IAP转场页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyIAP" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开引导IAP页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="模拟付款流程，打开以后不用真的购买" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchMockPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyInnerIAP" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开内部IAP页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyLoggerIAP" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打开锻炼折扣IAP页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="永远显示7天试用文案" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchAlwaysShowFreeTrail" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lySelectCountryCode" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="选择CountryCode" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyClearAllConfig" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="清空Spf配置" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="结算页是否使用随机积分" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchRandomPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_import_user_data" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Import User Data" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyPrintAllWorkout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Print All Workouts" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyCheckAllPlan" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="All Plan校验" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyTestTTS2" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Play TTS2 Voice" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="模拟TTS2下载空间不足" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_tts_nospace" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="显示Plan难度信息" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchShowPlanDifficulty" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_space_low" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Space Low Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_exercise_result" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="运动结果页" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_complete_all_day" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="完成所有天" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_complete_all_day3" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="所有day完成90%" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_complete_all_day2" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="完成所有天（最后一天90%）" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/btnTest" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="Show Satisfied Dialog" android:paddingHorizontal="@dimen/dp_16" style="@style/text_black" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_ad_switch" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="选择广告源" android:layout_weight="1.0" style="@style/text_black" />
+                <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/tvSelectAdSource" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_ad_ob_test" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Ad OB Test" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyMaxAdTest" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Max 测试套件" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyInterstitialAdAbGroup" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="插屏广告AB实验方案" android:layout_weight="1.0" style="@style/text_black" />
+                <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/tvInterstitialAdAbGroup" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/llShowUpgradeDialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Upgrade Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_all_exercise" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="All Exercises List" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyAllWeightRecord" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="All Weight Record" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyPrintExerciseProperty" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="打印动作属性" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_do_exercise" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Do Exercise For Test" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="标记订阅购买" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchSubscribed" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="标记购买广告" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_adPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_remove_iab" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="移除内购" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_toast" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="GooglePlay版本过低toast" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_text" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Debug Strings" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_notification_permission_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Notification Permission Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_reload_splash_after_close" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="开屏广告关闭后立即加载新的" android:layout_weight="1.0" style="@style/text_black" />
+                <TextView android:textSize="@dimen/sp_18" android:id="@id/tv_reload_splash_after_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_hold_splash_ad" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="开屏广告只在补弹时机显示" android:layout_weight="1.0" style="@style/text_black" />
+                <TextView android:textSize="@dimen/sp_18" android:id="@id/tv_hold_splash_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_splash_ad_pos" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="开屏广告只在补弹时机显示" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_coach_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Debug 锻炼欢迎弹窗" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tts2_download_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="TTS2下载弹窗" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tts2_download_error_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="TTS2下载失败弹窗" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_tts1_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="TTS2空间不足弹窗1" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_tts2_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="TTS2空间不足弹窗2" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyCheckTts" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Checkt TTS" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_enable_countdown_3" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Enable Countdown 3s" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_enable_countdown_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_random_show_in_exit" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Random Show Messages In Exit Page" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_random_show_in_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_always_use_new_layout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Always Use New Layout in Workout Process" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_always_use_new_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_always_use_old_layout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Always Use Old Layout in Workout Process" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_always_use_old_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_nav_bar_in_workout_process" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Navigation Bar In Workout Process" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_show_nav_bar_in_workout_process" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_select_picture" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Select Picture" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_use_new_plan" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Use New Plan" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_use_new_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyDebugShowWorkoutNotification" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Workout Notification(Sequence)" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_snooze_notification" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Workout Notification(Shuffle)" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_upgrade_notification_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Upgrade Notification Permission Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_upgrade_notification" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show App Upgrade Notification" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_upgrade_dialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Upgrade Dialog in MainActivity" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_show_upgrade_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_upgrade_item_in_settings" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Upgrade Item in Settings" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_debug_show_upgrade_item_in_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_show_alarm_permission" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Go to Alarm Permission Setting" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_check_alarm_permission" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Check Alarm Permission" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_loadGDPR" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Load GDPR" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Enable Logger" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchEnableLogger" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_showLoggerPage" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Logger Page ≤ 7 Days" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_showLoggerPage2" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Logger Page > 7 Days" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_insertWorkout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Insert 1 Workout Data, Old Data" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_insertSomeWorkout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="插入锻炼数据" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyDebugInsertSomeWeight" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Insert Some Weight Data" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_clearWorkout" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Clear All Workout Data" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_get15DayGift" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Get 7-Day Ad-Free" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_get30DayGift" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Get 15-Day Ad-Free" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_showAdFree15DayExpiredDialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Ad Free 7-day Expired Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_showAdFree1MonthExpiredDialog" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Ad Free 15-day Expired Dialog" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Show Ticker(✅)  In Calendar" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchShowTickInCalendar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ly_debug_removeAllLiveData" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Remove All Live Video Data" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Always Show Workout Loading Page" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchShowWorkoutLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Always Show Workout Video DownLoading Dialog" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchShowWorkoutVideoDownLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Always Show New Main Page" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchShowNewMainPage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyPrintAllExerciseTextMD5" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Pring All Exercise Text MD5" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="总是显示课程编辑的引导" android:layout_weight="1.0" style="@style/text_black" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/switchAlwaysShowEditGuide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:theme="@style/my_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutMakeACrash" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Make a Crash" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutSyncDate" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Sync Current Date" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutQueryIapDetails" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Query Iap Details" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/showSummerSaleConfig" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="显示夏季促销配置" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/showSendIapEvent" android:background="?selectableItemBackground" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="上报订阅埋点，测试数据" android:layout_weight="1.0" style="@style/text_black" />
+            </LinearLayout>
+            <Button android:textColor="@color/colorPrimary" android:layout_gravity="right" android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="Close" style="?buttonBarPositiveButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

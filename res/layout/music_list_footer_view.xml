@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sp_14" android:textColor="@color/music_text_color_50000000" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_80" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1303ad" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" style="@style/MusicText.Regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

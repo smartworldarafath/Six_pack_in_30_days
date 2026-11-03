@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="APKTOOL_RENAMED_0x7f030002">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030005">
+        <item>janeiro</item>
+        <item>fevereiro</item>
+        <item>março</item>
+        <item>abril</item>
+        <item>maio</item>
+        <item>junho</item>
+        <item>julho</item>
+        <item>agosto</item>
+        <item>setembro</item>
+        <item>outubro</item>
+        <item>novembro</item>
+        <item>dezembro</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030006">
+        <item>jan</item>
+        <item>fev</item>
+        <item>mar</item>
+        <item>abr</item>
+        <item>mai</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>ago</item>
+        <item>set</item>
+        <item>out</item>
+        <item>nov</item>
+        <item>dez</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f03000f">
+        <item>Domingo</item>
+        <item>Segunda-feira</item>
+        <item>Terça-feira</item>
+        <item>Quarta-feira</item>
+        <item>Quinta-feira</item>
+        <item>Sexta-feira</item>
+        <item>Sábado</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030010">
+        <item>Dom</item>
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Quar</item>
+        <item>Quin</item>
+        <item>Sex</item>
+        <item>Sáb</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030011">
+        <item>Dom</item>
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Quar</item>
+        <item>Quin</item>
+        <item>Sex</item>
+        <item>Sáb</item>
+    </string-array>
+</resources>

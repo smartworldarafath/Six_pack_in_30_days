@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/td_md_text_black" android:ellipsize="end" android:gravity="left|center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="106.0dp" android:layout_marginLeft="16.0dp" android:maxLines="2" android:fontFamily="@font/outfit_medium" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:minHeight="@dimen/dp_106">
+        <com.zjlib.thirtydaylib.views.roundview.DJRoundClipConstraintLayout android:id="@id/ly_img" android:layout_width="98.0dp" android:layout_height="86.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp">
+            <com.zjlib.thirtydaylib.views.roundview.DJRoundImageView android:id="@id/tv_action_image" android:layout_width="86.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:rv_radius="@dimen/dp_12" />
+            <androidx.appcompat.widget.actionplayview.ActionPlayView android:layout_gravity="center" android:id="@id/action_play_view" android:layout_width="98.0dp" android:layout_height="86.0dp" />
+            <androidx.cardview.widget.CardView android:id="@id/card_loading" android:layout_width="86.0dp" android:layout_height="86.0dp" app:cardCornerRadius="12.0dp" app:cardElevation="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+        </com.zjlib.thirtydaylib.views.roundview.DJRoundClipConstraintLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:ellipsize="end" android:gravity="left" android:id="@id/tv_action_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@font/outfit_medium" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/gray_888" android:id="@id/tv_action_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="16.0dp" android:fontFamily="@font/outfit_regular" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/gray_888" android:id="@id/tv_youtube" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="16.0dp" android:fontFamily="@font/outfit_regular" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/gray_888" android:id="@id/tv_muscle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="16.0dp" android:fontFamily="@font/outfit_regular" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center" android:id="@id/iv_checked" android:visibility="gone" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/icon_finish_0" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="@color/divider_new_style" android:layout_width="match_parent" android:layout_height="0.8000001dp" android:layout_marginLeft="124.0dp" android:layout_marginRight="15.0dp" />
+</FrameLayout>

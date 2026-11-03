@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="APKTOOL_RENAMED_0x7f030002">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normaal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030005">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maart</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030006">
+        <item>jan.</item>
+        <item>feb.</item>
+        <item>mrt.</item>
+        <item>apr.</item>
+        <item>mei</item>
+        <item>jun.</item>
+        <item>jul.</item>
+        <item>aug.</item>
+        <item>sep.</item>
+        <item>okt.</item>
+        <item>nov.</item>
+        <item>dec.</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f03000f">
+        <item>zondag</item>
+        <item>maandag</item>
+        <item>dinsdag</item>
+        <item>woensdag</item>
+        <item>donderdag</item>
+        <item>vrijdag</item>
+        <item>zaterdag</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030010">
+        <item>Zo</item>
+        <item>Ma</item>
+        <item>Di</item>
+        <item>Wo</item>
+        <item>Do</item>
+        <item>Vr</item>
+        <item>Za</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030011">
+        <item>Zo</item>
+        <item>Ma</item>
+        <item>Di</item>
+        <item>Wo</item>
+        <item>Do</item>
+        <item>Vr</item>
+        <item>Za</item>
+    </string-array>
+</resources>

@@ -1,0 +1,319 @@
+.class public final Lcom/vungle/ads/BannerAd$adPlayCallback$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/vungle/ads/internal/presenter/b;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\n\u0018\u00002\u00020\u0001J\u0019\u0010\u0005\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u0019\u0010\u0007\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\u0007\u0010\u0006J\u0019\u0010\u0008\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\u0008\u0010\u0006J\u0019\u0010\t\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\t\u0010\u0006J\u0019\u0010\n\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\n\u0010\u0006J\u0019\u0010\u000b\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\u000b\u0010\u0006J\u0017\u0010\u000e\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u000cH\u0016\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "com/vungle/ads/BannerAd$adPlayCallback$1",
+        "Lcom/vungle/ads/internal/presenter/b;",
+        "",
+        "id",
+        "Lxh8;",
+        "onAdStart",
+        "(Ljava/lang/String;)V",
+        "onAdImpression",
+        "onAdEnd",
+        "onAdClick",
+        "onAdRewarded",
+        "onAdLeftApplication",
+        "Lcom/vungle/ads/VungleError;",
+        "error",
+        "onFailure",
+        "(Lcom/vungle/ads/VungleError;)V",
+        "vungle-ads_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/vungle/ads/BannerAd;
+
+
+# direct methods
+.method public constructor <init>(Lcom/vungle/ads/BannerAd;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAdClick(Ljava/lang/String;)V
+    .locals 2
+
+    sget-object p1, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance p1, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdClick$1;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p1, v0}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdClick$1;-><init>(Lcom/vungle/ads/BannerAd;)V
+
+    invoke-static {p1}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    iget-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/BaseAd;->getDisplayToClickMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/vungle/ads/internal/o1;->d()V
+
+    sget-object p1, Lcom/vungle/ads/internal/AnalyticsClient;->INSTANCE:Lcom/vungle/ads/internal/AnalyticsClient;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v0}, Lcom/vungle/ads/BaseAd;->getDisplayToClickMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p0}, Lcom/vungle/ads/BaseAd;->getLogEntry$vungle_ads_release()Lcom/vungle/ads/internal/util/s;
+
+    move-result-object p0
+
+    iget-object v1, v0, Lcom/vungle/ads/internal/d1;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, p0, v1}, Lcom/vungle/ads/internal/AnalyticsClient;->a(Lcom/vungle/ads/internal/o1;Lcom/vungle/ads/internal/util/s;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onAdEnd(Ljava/lang/String;)V
+    .locals 0
+
+    sget-object p1, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance p1, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdEnd$1;
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p1, p0}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdEnd$1;-><init>(Lcom/vungle/ads/BannerAd;)V
+
+    invoke-static {p1}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    return-void
+.end method
+
+.method public onAdImpression(Ljava/lang/String;)V
+    .locals 3
+
+    sget-object p1, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance p1, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdImpression$1;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p1, v0}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdImpression$1;-><init>(Lcom/vungle/ads/BannerAd;)V
+
+    invoke-static {p1}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    iget-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/BaseAd;->getPresentToDisplayMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/vungle/ads/internal/o1;->d()V
+
+    sget-object p1, Lcom/vungle/ads/internal/AnalyticsClient;->INSTANCE:Lcom/vungle/ads/internal/AnalyticsClient;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v0}, Lcom/vungle/ads/BaseAd;->getPresentToDisplayMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v1}, Lcom/vungle/ads/BaseAd;->getLogEntry$vungle_ads_release()Lcom/vungle/ads/internal/util/s;
+
+    move-result-object v1
+
+    iget-object v2, v0, Lcom/vungle/ads/internal/d1;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1, v2}, Lcom/vungle/ads/internal/AnalyticsClient;->a(Lcom/vungle/ads/internal/o1;Lcom/vungle/ads/internal/util/s;Ljava/lang/String;)V
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p0}, Lcom/vungle/ads/BaseAd;->getDisplayToClickMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/vungle/ads/internal/o1;->e()V
+
+    return-void
+.end method
+
+.method public onAdLeftApplication(Ljava/lang/String;)V
+    .locals 0
+
+    sget-object p1, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance p1, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdLeftApplication$1;
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p1, p0}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdLeftApplication$1;-><init>(Lcom/vungle/ads/BannerAd;)V
+
+    invoke-static {p1}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    return-void
+.end method
+
+.method public onAdRewarded(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onAdStart(Ljava/lang/String;)V
+    .locals 3
+
+    iget-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/BaseAd;->getSignalManager$vungle_ads_release()Lcom/vungle/ads/internal/signals/j;
+
+    move-result-object p1
+
+    monitor-enter p1
+
+    :try_start_0
+    iget-object v0, p1, Lcom/vungle/ads/internal/signals/j;->h:Lcom/vungle/ads/internal/signals/c;
+
+    iget v1, v0, Lcom/vungle/ads/internal/signals/c;->f:I
+
+    add-int/lit8 v1, v1, 0x1
+
+    iput v1, v0, Lcom/vungle/ads/internal/signals/c;->f:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p1
+
+    iget-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/BaseAd;->getAdInternal$vungle_ads_release()Lcom/vungle/ads/internal/r;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/vungle/ads/internal/r;->l:Lcom/vungle/ads/internal/o1;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/internal/o1;->d()V
+
+    sget-object p1, Lcom/vungle/ads/internal/AnalyticsClient;->INSTANCE:Lcom/vungle/ads/internal/AnalyticsClient;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v0}, Lcom/vungle/ads/BaseAd;->getAdInternal$vungle_ads_release()Lcom/vungle/ads/internal/r;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/vungle/ads/internal/r;->l:Lcom/vungle/ads/internal/o1;
+
+    iget-object v1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v1}, Lcom/vungle/ads/BaseAd;->getLogEntry$vungle_ads_release()Lcom/vungle/ads/internal/util/s;
+
+    move-result-object v1
+
+    iget-object v2, v0, Lcom/vungle/ads/internal/d1;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1, v2}, Lcom/vungle/ads/internal/AnalyticsClient;->a(Lcom/vungle/ads/internal/o1;Lcom/vungle/ads/internal/util/s;Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {p1}, Lcom/vungle/ads/BaseAd;->getPresentToDisplayMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/vungle/ads/internal/o1;->e()V
+
+    sget-object p1, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance p1, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdStart$1;
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {p1, p0}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onAdStart$1;-><init>(Lcom/vungle/ads/BannerAd;)V
+
+    invoke-static {p1}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit p1
+
+    throw p0
+.end method
+
+.method public onFailure(Lcom/vungle/ads/VungleError;)V
+    .locals 4
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iget-object v0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v0}, Lcom/vungle/ads/BaseAd;->getShowToFailMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/vungle/ads/internal/o1;->d()V
+
+    sget-object v0, Lcom/vungle/ads/internal/AnalyticsClient;->INSTANCE:Lcom/vungle/ads/internal/AnalyticsClient;
+
+    iget-object v1, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v1}, Lcom/vungle/ads/BaseAd;->getShowToFailMetric$vungle_ads_release()Lcom/vungle/ads/internal/o1;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-virtual {v2}, Lcom/vungle/ads/BaseAd;->getLogEntry$vungle_ads_release()Lcom/vungle/ads/internal/util/s;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Lcom/vungle/ads/VungleError;->getCode()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/vungle/ads/internal/AnalyticsClient;->a(Lcom/vungle/ads/internal/o1;Lcom/vungle/ads/internal/util/s;Ljava/lang/String;)V
+
+    sget-object v0, Lcom/vungle/ads/internal/util/y;->a:Landroid/os/Handler;
+
+    new-instance v0, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onFailure$1;
+
+    iget-object p0, p0, Lcom/vungle/ads/BannerAd$adPlayCallback$1;->a:Lcom/vungle/ads/BannerAd;
+
+    invoke-direct {v0, p0, p1}, Lcom/vungle/ads/BannerAd$adPlayCallback$1$onFailure$1;-><init>(Lcom/vungle/ads/BannerAd;Lcom/vungle/ads/VungleError;)V
+
+    invoke-static {v0}, Lcom/vungle/ads/internal/util/y;->a(Lpb3;)V
+
+    return-void
+.end method

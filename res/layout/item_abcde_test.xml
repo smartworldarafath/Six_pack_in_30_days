@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+        <RadioGroup android:orientation="vertical" android:id="@id/rgGroup" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="A" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="B" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="C" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="D" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="E" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbF" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="F" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbG" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="G" android:layout_marginEnd="@dimen/dp_10" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbH" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_300" android:minHeight="@dimen/dp_40" android:text="H" android:layout_marginEnd="@dimen/dp_10" />
+        </RadioGroup>
+    </LinearLayout>
+</HorizontalScrollView>

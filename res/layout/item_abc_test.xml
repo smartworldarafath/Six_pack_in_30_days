@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="Reminder时间实验" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbStop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Debug" android:layout_marginEnd="@dimen/dp_10" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:layout_marginEnd="@dimen/dp_10" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:layout_marginEnd="@dimen/dp_10" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/rbC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:layout_marginEnd="@dimen/dp_10" />
+    </RadioGroup>
+</LinearLayout>

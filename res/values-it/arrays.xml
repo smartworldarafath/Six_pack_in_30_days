@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="APKTOOL_RENAMED_0x7f030002">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normale</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030005">
+        <item>gennaio</item>
+        <item>febbraio</item>
+        <item>marzo</item>
+        <item>aprile</item>
+        <item>maggio</item>
+        <item>giugno</item>
+        <item>luglio</item>
+        <item>agosto</item>
+        <item>settembre</item>
+        <item>ottobre</item>
+        <item>novembre</item>
+        <item>dicembre</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030006">
+        <item>gen</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>apr</item>
+        <item>mag</item>
+        <item>giu</item>
+        <item>lug</item>
+        <item>ago</item>
+        <item>set</item>
+        <item>ott</item>
+        <item>nov</item>
+        <item>dic</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f03000f">
+        <item>Domenica</item>
+        <item>Lunedì</item>
+        <item>Martedì</item>
+        <item>Mercoledì</item>
+        <item>Giovedì</item>
+        <item>Venerdì</item>
+        <item>Sabato</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030010">
+        <item>Dom</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Gio</item>
+        <item>Ven</item>
+        <item>Sab</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030011">
+        <item>Dom</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Gio</item>
+        <item>Ven</item>
+        <item>Sab</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:duration="200" android:drawable="@drawable/wp_swipearrow1" />
+    <item android:duration="200" android:drawable="@drawable/wp_swipearrow2" />
+    <item android:duration="200" android:drawable="@drawable/wp_swipearrow3" />
+    <item android:duration="200" android:drawable="@drawable/wp_swipearrow4" />
+    <item android:duration="200" android:drawable="@drawable/wp_swipearrow5" />
+</animation-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/black" android:background="@android:color/white" android:paddingLeft="?dialogPreferredPadding" android:paddingTop="@dimen/abc_dialog_padding_top_material" android:paddingRight="?dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1306f4" android:fontFamily="@string/APKTOOL_RENAMED_0x7f1304e7" style="@style/TextAppearance.AppCompat.Subhead" />
+        <LinearLayout android:orientation="vertical" android:id="@id/button_layout" android:background="@android:color/white" android:paddingTop="@dimen/abc_dialog_padding_top_material" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btn_download_tts" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/abc_alert_dialog_button_bar_height">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1306ea" android:layout_centerInParent="true" style="@style/TextAppearance.AppCompat.Button" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/btn_select_tts" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/abc_alert_dialog_button_bar_height">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1306ef" android:layout_centerInParent="true" style="@style/TextAppearance.AppCompat.Button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

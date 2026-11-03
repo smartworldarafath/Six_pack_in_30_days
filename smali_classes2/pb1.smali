@@ -1,0 +1,51 @@
+.class public abstract Lpb1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lnb1;
+
+.field public static final b:Lnb1;
+
+.field public static final c:Lnb1;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    sget-object v0, Lgi;->B:Lgi;
+
+    new-instance v1, Lnb1;
+
+    const v2, -0x4554f2da
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v0, v3}, Lnb1;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, Lpb1;->a:Lnb1;
+
+    sget-object v0, Lgi;->C:Lgi;
+
+    new-instance v1, Lnb1;
+
+    const v2, 0x7c63c00a
+
+    invoke-direct {v1, v2, v0, v3}, Lnb1;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, Lpb1;->b:Lnb1;
+
+    sget-object v0, Lgi;->D:Lgi;
+
+    new-instance v1, Lnb1;
+
+    const v2, 0x115720bc
+
+    invoke-direct {v1, v2, v0, v3}, Lnb1;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, Lpb1;->c:Lnb1;
+
+    return-void
+.end method

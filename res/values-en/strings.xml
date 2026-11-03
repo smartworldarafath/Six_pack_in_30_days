@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APKTOOL_RENAMED_0x7f13005e">Please press \"Continue\" if you choose to start using our app.</string>
+    <string name="APKTOOL_RENAMED_0x7f13005f" />
+    <string name="APKTOOL_RENAMED_0x7f130060">Continue</string>
+    <string name="APKTOOL_RENAMED_0x7f130065">To use %s you must agree to our Terms &amp; Conditions and affirm you have reviewed our Privacy Policy</string>
+    <string name="APKTOOL_RENAMED_0x7f130066">To use %s you must affirm that you have reviewed and acknowledged our Privacy Policy.</string>
+    <string name="APKTOOL_RENAMED_0x7f130067">Privacy Policy</string>
+    <string name="APKTOOL_RENAMED_0x7f130068">Terms &amp; Conditions</string>
+    <string name="APKTOOL_RENAMED_0x7f130069">Terms of Use</string>
+    <string name="APKTOOL_RENAMED_0x7f1300d3">No more data</string>
+    <string name="APKTOOL_RENAMED_0x7f1300d4">load more failed</string>
+    <string name="APKTOOL_RENAMED_0x7f1300d5">Loading...</string>
+    <string name="tt_full_screen_skip_tx">Skip after 5S</string>
+    <string name="tt_logo_cn">AD</string>
+    <string name="tt_slide_up_3d">wipe up</string>
+    <string name="tt_splash_brush_mask_hint">Jump to details page or third party application</string>
+    <string name="tt_splash_brush_mask_title">Slide or click to Polish</string>
+    <string name="tt_splash_default_click_shake">Shake or click to learn more</string>
+    <string name="tt_splash_rock_text">Go to details page or third-party application</string>
+    <string name="tt_splash_rock_top_text">Shake or click the icon</string>
+    <string name="tt_splash_wriggle_text">Go to details page or third-party application</string>
+    <string name="tt_splash_wriggle_top_text">Twist the phone</string>
+    <string name="tt_splash_wriggle_top_text_style_17">Twist the phone or tap the icon</string>
+    <string name="tt_text_privacy_app_version">Version：V</string>
+    <string name="tt_text_privacy_development">Developer：</string>
+</resources>

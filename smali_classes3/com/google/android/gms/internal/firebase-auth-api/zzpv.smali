@@ -1,0 +1,21 @@
+.class public interface abstract Lcom/google/android/gms/internal/firebase-auth-api/zzpv;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<B:",
+        "Ljava/lang/Object;",
+        "P:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract zza()Ljava/lang/Class;
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjlib.thirtydaylib.views.roundview.DJRoundConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:rv_backgroundColor="#0d1329a5" app:rv_halfRoundCorner="true" app:rv_rippleColor="#0d000000" app:rv_rippleEnable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_point" android:background="@drawable/round_major_muscle" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_area" android:layout_width="wrap_content" android:layout_height="@dimen/dp_35" android:fontFamily="@font/outfit_regular" android:layout_marginStart="@dimen/dp_6" app:layout_constraintStart_toEndOf="@id/view_point" app:layout_constraintTop_toTopOf="parent" />
+</com.zjlib.thirtydaylib.views.roundview.DJRoundConstraintLayout>

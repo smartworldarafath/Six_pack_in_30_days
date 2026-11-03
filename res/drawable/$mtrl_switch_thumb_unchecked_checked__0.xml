@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:duration="@integer/mtrl_switch_thumb_post_morphing_duration" android:valueFrom="@string/APKTOOL_RENAMED_0x7f13039d" android:valueTo="@string/APKTOOL_RENAMED_0x7f13039a" android:valueType="pathType" android:propertyName="pathData"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" />

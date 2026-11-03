@@ -1,0 +1,70 @@
+.class Landroidx/viewpager2/widget/ViewPager2$4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lqm6;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/viewpager2/widget/ViewPager2;->enforceChildFillListener()Lqm6;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/viewpager2/widget/ViewPager2;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$4;->this$0:Landroidx/viewpager2/widget/ViewPager2;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onChildViewAttachedToWindow(Landroid/view/View;)V
+    .locals 1
+
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
+
+    iget p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
+    const/4 v0, -0x1
+
+    if-ne p1, v0, :cond_0
+
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    if-ne p0, v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string p0, "Pages must fill the whole ViewPager2 (use match_parent)"
+
+    invoke-static {p0}, Lk;->m(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onChildViewDetachedFromWindow(Landroid/view/View;)V
+    .locals 0
+
+    return-void
+.end method

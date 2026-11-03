@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="APKTOOL_RENAMED_0x7f030002">
+        <item>۰٫۲۵ برابر</item>
+        <item>۰٫۵ برابر</item>
+        <item>۰٫۷۵ برابر</item>
+        <item>عادی</item>
+        <item>۱٫۲۵ برابر</item>
+        <item>۱٫۵ برابر</item>
+        <item>۲ برابر</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030005">
+        <item>ژانویهٔ</item>
+        <item>فوریهٔ</item>
+        <item>مارس</item>
+        <item>آوریل</item>
+        <item>مهٔ</item>
+        <item>ژوئن</item>
+        <item>ژوئیهٔ</item>
+        <item>اوت</item>
+        <item>سپتامبر</item>
+        <item>اکتبر</item>
+        <item>نوامبر</item>
+        <item>دسامبر</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030006">
+        <item>ژانویهٔ</item>
+        <item>فوریهٔ</item>
+        <item>مارس</item>
+        <item>آوریل</item>
+        <item>مهٔ</item>
+        <item>ژوئن</item>
+        <item>ژوئیهٔ</item>
+        <item>اوت</item>
+        <item>سپتامبر</item>
+        <item>اکتبر</item>
+        <item>نوامبر</item>
+        <item>دسامبر</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f03000f">
+        <item>یکشنبه</item>
+        <item>دوشنبه</item>
+        <item>دوشنبه</item>
+        <item>چهارشنبه</item>
+        <item>پنجشنبه</item>
+        <item>جمعه</item>
+        <item>شنبه</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030010">
+        <item>ی</item>
+        <item>د</item>
+        <item>س</item>
+        <item>چ</item>
+        <item>پ</item>
+        <item>ج</item>
+        <item>ش</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030011">
+        <item>ی</item>
+        <item>د</item>
+        <item>س</item>
+        <item>چ</item>
+        <item>پ</item>
+        <item>ج</item>
+        <item>ش</item>
+    </string-array>
+</resources>

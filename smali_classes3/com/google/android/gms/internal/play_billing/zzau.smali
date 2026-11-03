@@ -1,0 +1,58 @@
+.class public final Lcom/google/android/gms/internal/play_billing/zzau;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final synthetic a:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lcom/google/android/gms/internal/play_billing/zzau;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    return-void
+.end method
+
+.method public static a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    .locals 2
+
+    sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_0
+    invoke-interface {v0, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/os/Parcelable;
+
+    return-object p0
+.end method
+
+.method public static b(Landroid/os/Parcel;Landroid/os/Bundle;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p0, v0}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
+
+    return-void
+.end method

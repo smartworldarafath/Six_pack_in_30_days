@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cm_dp_250">236.10999dp</dimen>
+    <dimen name="dp_0_5">0.45000005dp</dimen>
+    <dimen name="dp_10">9.069977dp</dimen>
+    <dimen name="dp_4">3.6299744dp</dimen>
+    <dimen name="dp_40">36.26999dp</dimen>
+    <dimen name="sp_14">12.689972sp</dimen>
+</resources>

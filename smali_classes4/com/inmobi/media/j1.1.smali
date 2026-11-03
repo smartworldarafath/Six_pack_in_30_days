@@ -1,0 +1,281 @@
+.class public final Lcom/inmobi/media/j1;
+.super Lmy7;
+.source "SourceFile"
+
+# interfaces
+.implements Lwb3;
+
+
+# instance fields
+.field public a:I
+
+.field public final synthetic b:Lcom/inmobi/media/n1;
+
+
+# direct methods
+.method public constructor <init>(Lcom/inmobi/media/n1;Lwj1;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lmy7;-><init>(ILwj1;)V
+
+    return-void
+.end method
+
+.method public static final a(Lcom/inmobi/media/n1;Lcom/inmobi/media/X;)Lxh8;
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/inmobi/media/n1;->a(Lcom/inmobi/media/n1;Lcom/inmobi/media/X;)V
+
+    sget-object p0, Lxh8;->a:Lxh8;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lwj1;)Lwj1;
+    .locals 0
+
+    new-instance p1, Lcom/inmobi/media/j1;
+
+    iget-object p0, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-direct {p1, p0, p2}, Lcom/inmobi/media/j1;-><init>(Lcom/inmobi/media/n1;Lwj1;)V
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lwk1;
+
+    check-cast p2, Lwj1;
+
+    new-instance p1, Lcom/inmobi/media/j1;
+
+    iget-object p0, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-direct {p1, p0, p2}, Lcom/inmobi/media/j1;-><init>(Lcom/inmobi/media/n1;Lwj1;)V
+
+    sget-object p0, Lxh8;->a:Lxh8;
+
+    invoke-virtual {p1, p0}, Lcom/inmobi/media/j1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    const-string v0, "doAdLoadWork: "
+
+    iget v1, p0, Lcom/inmobi/media/j1;->a:I
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    :try_start_0
+    invoke-static {p1}, Lt49;->P(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Lcom/inmobi/media/Z; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p1
+
+    goto/16 :goto_3
+
+    :cond_0
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-static {p0}, Lk;->m(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_1
+    invoke-static {p1}, Lt49;->P(Ljava/lang/Object;)V
+
+    new-instance p1, Lcom/inmobi/media/nq;
+
+    iget-object v1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-virtual {v1}, Lcom/inmobi/media/n1;->H()Lcom/inmobi/media/Mf;
+
+    move-result-object v1
+
+    iget-object v4, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    iget-object v4, v4, Lcom/inmobi/media/n1;->i:Lcom/inmobi/media/Z9;
+
+    invoke-direct {p1, v1, v4}, Lcom/inmobi/media/nq;-><init>(Lcom/inmobi/media/Mf;Lcom/inmobi/media/Z9;)V
+
+    :try_start_1
+    iget-object v1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    new-instance v4, Lqe9;
+
+    invoke-direct {v4, v1, v3}, Lqe9;-><init>(Lcom/inmobi/media/n1;I)V
+
+    iput v2, p0, Lcom/inmobi/media/j1;->a:I
+
+    invoke-virtual {p1, v4, p0}, Lcom/inmobi/media/T0;->a(Lrb3;Lyj1;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_1
+    .catch Lcom/inmobi/media/Z; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    sget-object v1, Lxk1;->a:Lxk1;
+
+    if-ne p1, v1, :cond_2
+
+    return-object v1
+
+    :cond_2
+    :goto_0
+    :try_start_2
+    check-cast p1, Lcom/inmobi/media/ads/network/common/model/AdResponse;
+
+    iget-object v1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    iget-object v2, v1, Lcom/inmobi/media/n1;->i:Lcom/inmobi/media/Z9;
+
+    if-eqz v2, :cond_3
+
+    iget-object v1, v1, Lcom/inmobi/media/n1;->l:Lcom/inmobi/media/x0;
+
+    iget-object v4, v1, Lcom/inmobi/media/x0;->e:Ljava/lang/String;
+
+    iget-object v1, v1, Lcom/inmobi/media/x0;->f:Ljava/lang/String;
+
+    invoke-static {v4, v1, p1, v2}, Lcom/inmobi/media/e0;->a(Ljava/lang/String;Ljava/lang/String;Lcom/inmobi/media/ads/network/common/model/AdResponse;Lcom/inmobi/media/Z9;)V
+
+    :cond_3
+    iget-object v1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-virtual {v1, p1}, Lcom/inmobi/media/n1;->a(Lcom/inmobi/media/ads/network/common/model/AdResponse;)V
+    :try_end_2
+    .catch Lcom/inmobi/media/Z; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    goto :goto_4
+
+    :goto_1
+    :try_start_3
+    iget-object v1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    iget-object v1, v1, Lcom/inmobi/media/n1;->i:Lcom/inmobi/media/Z9;
+
+    if-eqz v1, :cond_4
+
+    const-string v2, "n1"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v2, v0}, Lcom/inmobi/media/Z9;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception p1
+
+    goto :goto_5
+
+    :cond_4
+    :goto_2
+    sget-object v0, Lcom/inmobi/media/Ba;->a:Ljl4;
+
+    new-instance v0, Lcom/inmobi/media/j3;
+
+    invoke-direct {v0, p1}, Lcom/inmobi/media/j3;-><init>(Ljava/lang/Throwable;)V
+
+    invoke-static {v0}, Lcom/inmobi/media/Ba;->a(Lcom/inmobi/media/j3;)V
+
+    iget-object p1, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string v0, "errorCode"
+
+    const/16 v1, 0x93b
+
+    invoke-static {v1}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
+
+    move-result-object v1
+
+    new-instance v2, Ll06;
+
+    invoke-direct {v2, v0, v1}, Ll06;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    filled-new-array {v2}, [Ll06;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lv05;->d0([Ll06;)Ljava/util/LinkedHashMap;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/inmobi/media/n1;->b(Ljava/util/Map;)V
+
+    new-instance v0, Lcom/inmobi/ads/InMobiAdRequestStatus;
+
+    sget-object v1, Lcom/inmobi/ads/InMobiAdRequestStatus$StatusCode;->INTERNAL_ERROR:Lcom/inmobi/ads/InMobiAdRequestStatus$StatusCode;
+
+    invoke-direct {v0, v1}, Lcom/inmobi/ads/InMobiAdRequestStatus;-><init>(Lcom/inmobi/ads/InMobiAdRequestStatus$StatusCode;)V
+
+    invoke-virtual {p1, v0, v3}, Lcom/inmobi/media/n1;->b(Lcom/inmobi/ads/InMobiAdRequestStatus;S)V
+
+    goto :goto_4
+
+    :goto_3
+    iget-object v0, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-static {v0, p1}, Lcom/inmobi/media/n1;->a(Lcom/inmobi/media/n1;Lcom/inmobi/media/Z;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :goto_4
+    iget-object p0, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-virtual {p0, v3}, Lcom/inmobi/media/n1;->b(B)V
+
+    sget-object p0, Lxh8;->a:Lxh8;
+
+    return-object p0
+
+    :goto_5
+    iget-object p0, p0, Lcom/inmobi/media/j1;->b:Lcom/inmobi/media/n1;
+
+    invoke-virtual {p0, v3}, Lcom/inmobi/media/n1;->b(B)V
+
+    throw p1
+.end method

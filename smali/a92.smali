@@ -1,0 +1,84 @@
+.class public final La92;
+.super Lhs9;
+.source "SourceFile"
+
+
+# instance fields
+.field public final p:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 1
+
+    const/16 v0, 0x10
+
+    invoke-direct {p0, v0}, Lhs9;-><init>(I)V
+
+    iput p1, p0, La92;->p:I
+
+    if-lez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string p0, "px must be > 0."
+
+    invoke-static {p0}, Lk;->k(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, La92;
+
+    if-eqz v1, :cond_1
+
+    check-cast p1, La92;
+
+    iget p1, p1, La92;->p:I
+
+    iget p0, p0, La92;->p:I
+
+    if-ne p0, p1, :cond_1
+
+    return v0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    iget p0, p0, La92;->p:I
+
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    iget p0, p0, La92;->p:I
+
+    invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

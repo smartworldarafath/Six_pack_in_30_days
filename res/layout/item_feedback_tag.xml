@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_16" android:textColor="@color/selector_feedback_tag_text_color" android:background="@drawable/selector_chip_item_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/outfit_regular" android:paddingHorizontal="@dimen/dp_12" android:paddingVertical="@dimen/dp_6"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

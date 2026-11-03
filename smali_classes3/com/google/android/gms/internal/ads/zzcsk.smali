@@ -1,0 +1,54 @@
+.class public final Lcom/google/android/gms/internal/ads/zzcsk;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzinw;
+
+
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/zzioa;
+
+.field public final b:Lcom/google/android/gms/internal/ads/zzioa;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzioa;Lcom/google/android/gms/internal/ads/zzioa;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzcsk;->a:Lcom/google/android/gms/internal/ads/zzioa;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzcsk;->b:Lcom/google/android/gms/internal/ads/zzioa;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzb()Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzcsk;->a:Lcom/google/android/gms/internal/ads/zzioa;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzioa;->b()Ljava/util/Map;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map;
+
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zzcsk;->b:Lcom/google/android/gms/internal/ads/zzioa;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzioa;->b()Ljava/util/Map;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/util/Map;
+
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzcsj;
+
+    invoke-direct {v1, v0, p0}, Lcom/google/android/gms/internal/ads/zzcsj;-><init>(Ljava/util/Map;Ljava/util/Map;)V
+
+    return-object v1
+.end method

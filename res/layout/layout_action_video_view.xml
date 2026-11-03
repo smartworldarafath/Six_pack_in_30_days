@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.videoplayer.TextureVideoView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/view_place_holder" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:layout_gravity="center" android:id="@id/view_mask" android:background="#fafafa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_fail_img" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+    <include layout="@layout/layout_action_video_loading_view" />
+</FrameLayout>

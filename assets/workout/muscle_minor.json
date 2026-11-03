@@ -1,0 +1,82 @@
+[
+  {
+    "itemid": 1,
+    "itemvalue": "abs",
+    "namekey": "abs"
+  },
+  {
+    "itemid": 2,
+    "itemvalue": "back",
+    "namekey": "back"
+  },
+  {
+    "itemid": 3,
+    "itemvalue": "triceps",
+    "namekey": "triceps"
+  },
+  {
+    "itemid": 4,
+    "itemvalue": "biceps",
+    "namekey": "biceps"
+  },
+  {
+    "itemid": 5,
+    "itemvalue": "forearms",
+    "namekey": "forearms"
+  },
+  {
+    "itemid": 6,
+    "itemvalue": "chest",
+    "namekey": "chest"
+  },
+  {
+    "itemid": 7,
+    "itemvalue": "shoulders",
+    "namekey": "shoulders"
+  },
+  {
+    "itemid": 8,
+    "itemvalue": "glutes",
+    "namekey": "glutes"
+  },
+  {
+    "itemid": 9,
+    "itemvalue": "quadriceps",
+    "namekey": "quadriceps"
+  },
+  {
+    "itemid": 10,
+    "itemvalue": "hamstrings",
+    "namekey": "hamstrings"
+  },
+  {
+    "itemid": 11,
+    "itemvalue": "calves",
+    "namekey": "calves"
+  },
+  {
+    "itemid": 12,
+    "itemvalue": "traps",
+    "namekey": "traps"
+  },
+  {
+    "itemid": 13,
+    "itemvalue": "adductors",
+    "namekey": "adductors"
+  },
+  {
+    "itemid": 14,
+    "itemvalue": "adductors",
+    "namekey": "adductors"
+  },
+  {
+    "itemid": 15,
+    "itemvalue": "neck",
+    "namekey": "neck"
+  },
+  {
+    "itemid": 16,
+    "itemvalue": "lower back",
+    "namekey": "lower_back"
+  }
+]

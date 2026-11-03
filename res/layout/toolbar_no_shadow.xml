@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/ly_toolbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp" app:contentInsetEnd="@dimen/bs_margin_40" app:contentInsetStart="@dimen/bs_margin_40" app:contentInsetStartWithNavigation="@dimen/bs_margin_40" app:popupTheme="@style/td_toolbar_popup_theme" app:theme="@style/td_toolbar_no_bg" app:titleTextAppearance="@style/toolbar_title_home" />
+</com.google.android.material.appbar.AppBarLayout>

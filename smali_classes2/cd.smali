@@ -1,0 +1,13 @@
+.class public final Lcd;
+.super Ldd;
+.source "SourceFile"
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "Bradford"
+
+    return-object p0
+.end method

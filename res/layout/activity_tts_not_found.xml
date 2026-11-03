@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ly_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/btn_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Switch" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintBottom_toTopOf="@id/ly_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ly_container" android:background="@drawable/tts_bg_top_round" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dp_370" app:layout_constraintBottom_toBottomOf="parent">
+        <FrameLayout android:id="@id/ly_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/iv_close" android:background="@drawable/bg_transparent_btn_r_6" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_38" android:layout_height="@dimen/dp_38" android:layout_margin="@dimen/dp_3" android:src="@drawable/icon_general_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

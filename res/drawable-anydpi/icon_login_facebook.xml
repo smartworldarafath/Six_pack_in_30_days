@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="78.0dp" android:width="78.0dp" android:viewportWidth="78.0" android:viewportHeight="78.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$icon_login_facebook__0" android:pathData="M39,39m-39,0a39,39 0,1 1,78 0a39,39 0,1 1,-78 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fbfbfb" android:pathData="M48.523,21.698C44.987,21.698 43.966,23.231 43.966,26.604L43.966,32.2L53.395,32.2L52.452,41.244L43.966,41.244L43.966,68.687L32.651,68.687L32.651,41.244L25.03,41.244L25.03,32.2L32.651,32.2L32.651,26.757C32.651,17.635 36.423,12.806 46.952,12.806C49.231,12.806 51.902,12.959 53.552,13.19L53.552,21.698L48.523,21.698" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

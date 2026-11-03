@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjlib.thirtydaylib.views.roundview.DJRoundConstraintLayout android:id="@id/layoutViewRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_6" app:rv_radius="@dimen/dp_40" app:rv_strokeColor="@color/theme_color" app:rv_strokeWidth="@dimen/dp_2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zjlib.thirtydaylib.views.roundview.DJRoundImageView android:id="@id/ivCoach" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_2" android:src="@drawable/icon_male3d" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivCheck" android:visibility="visible" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_icon_select" />
+</com.zjlib.thirtydaylib.views.roundview.DJRoundConstraintLayout>

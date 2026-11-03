@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/tv_symbol_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/tv_symbol_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/tv_symbol_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorForeground">@color/gray9a</item>
+        <item name="android:windowAnimationStyle">@style/my_activity_anim</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">@color/lw_color_primary_dark</item>
+        <item name="colorSwitchThumbNormal">@color/gray9a</item>
+    </style>
+    <style name="music_base_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="APKTOOL_RENAMED_0x7f030002">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Bình thường</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030006">
+        <item>thg 1</item>
+        <item>thg 2</item>
+        <item>thg 3</item>
+        <item>thg 4</item>
+        <item>thg 5</item>
+        <item>thg 6</item>
+        <item>thg 7</item>
+        <item>thg 8</item>
+        <item>thg 9</item>
+        <item>thg 10</item>
+        <item>thg 11</item>
+        <item>thg 12</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f03000f">
+        <item>Chủ Nhật</item>
+        <item>Thứ hai</item>
+        <item>Thứ ba</item>
+        <item>Thứ tư</item>
+        <item>Thứ năm</item>
+        <item>Thứ sáu</item>
+        <item>Thứ bảy</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030010">
+        <item>CN</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>T7</item>
+    </string-array>
+    <string-array name="APKTOOL_RENAMED_0x7f030011">
+        <item>CN</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>T7</item>
+    </string-array>
+</resources>

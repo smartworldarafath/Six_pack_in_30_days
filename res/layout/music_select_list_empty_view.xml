@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dp_52" android:paddingEnd="@dimen/dp_52"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/icon_music_phone" android:layout_width="@dimen/dp_54" android:layout_height="@dimen/dp_54" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_22" android:textColor="@color/music_text_color_0D2639" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_21" android:text="@string/APKTOOL_RENAMED_0x7f1303cb" style="@style/MusicText.Bold" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_16" android:textColor="@color/music_text_color_50000000" android:gravity="center" android:id="@id/noMusicTipsView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="@string/APKTOOL_RENAMED_0x7f1301a8" style="@style/MusicText.Regular" />
+</LinearLayout>

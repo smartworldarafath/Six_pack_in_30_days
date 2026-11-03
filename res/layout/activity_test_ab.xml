@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_12">
+        <sixpack.sixpackabs.absworkout.views.ImmersiveView android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_20" android:textColor="@color/black" android:id="@id/tvGuideConfig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="引导页配置" android:fontFamily="@font/outfit_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:id="@id/tvCurCountryCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="当前国家码：" android:fontFamily="@font/outfit_regular" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvGuideConfig" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:id="@id/tvGuideCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="引导页默认国家列表:\nUS, TR, PL, ES, FR, DE, GB" android:fontFamily="@font/outfit_medium" app:layout_constrainedWidth="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvCurCountryCode" />
+            <View android:id="@id/vLine" android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" app:layout_constraintTop_toBottomOf="@id/tvGuideCountry" />
+            <include android:id="@id/guideAbTest" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/vLine" layout="@layout/item_abcde_test" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <include android:id="@id/enableSummerSaleTest" layout="@layout/item_ab_test" />
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <include android:id="@id/summerSaleTest" layout="@layout/item_ab_test" />
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <include android:id="@id/newGlobalBannerLoadTimingTest" layout="@layout/item_ab_test" />
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <include android:id="@id/reminderSetTpe" layout="@layout/item_abc_test" />
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <include android:id="@id/planLevelConfig" layout="@layout/item_abcde_test" />
+        <View android:background="#7f979797" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+# ==========================================
+# STRICT SECURITY DIRECTIVE: Zero-Leak Gate
+# NEVER commit any signing keys or secrets
+# ==========================================
+*.keystore
+*.jks
+*.key
+*.pk8
+*.p12
+*.pem
+*.pfx
+*.der
+*.crt
+*.cert
+debug.keystore
+release.keystore
+*.keypair
+
+# Secrets and environment configurations
+.env
+.env.*
+local.properties
+google-services.json
+credentials.json
+client_secrets.json
+secrets/
+
+# Build outputs & temporary binaries
+build/
+dist/
+bin/
+out/
+*.apk
+*.aab
+*.idsig
+/classes*.dex
+!assets/**/*.dex
+*.bak
+*.log
+*.tmp
+*.class
+
+# IDE & OS specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

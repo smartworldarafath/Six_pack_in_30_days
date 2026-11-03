@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zjlib.thirtydaylib.views.roundview.DJRoundLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/btnRestartPlan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_19" android:minWidth="@dimen/dp_240" android:minHeight="@dimen/dp_56" android:layout_marginHorizontal="@dimen/dp_20" android:paddingHorizontal="@dimen/dp_20" app:rv_backgroundColor="#f7f7f7" app:rv_radius="@dimen/dp_20" app:rv_rippleEnable="true">
+        <ImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/icon_restart_alt" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/theme_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/APKTOOL_RENAMED_0x7f1304d4" android:fontFamily="@font/outfit_regular" android:layout_marginStart="@dimen/dp_4" />
+    </com.zjlib.thirtydaylib.views.roundview.DJRoundLinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+</LinearLayout>

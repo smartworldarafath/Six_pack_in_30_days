@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/current_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/icon_reports_workout" />
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/black" android:gravity="center" android:id="@id/tvTotalWorkouts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:includeFontPadding="false" android:fontFamily="@font/outfit_bold" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray_999" android:gravity="center" android:id="@id/tvWorkoutTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/APKTOOL_RENAMED_0x7f130753" android:fontFamily="@font/outfit_regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/icon_reports_kcal" />
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/black" android:gravity="center" android:id="@id/tvTotalCalorie" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:includeFontPadding="false" android:fontFamily="@font/outfit_bold" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray_999" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/APKTOOL_RENAMED_0x7f1302c1" android:fontFamily="@font/outfit_regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/max_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/icon_reports_time" />
+        <TextView android:textSize="@dimen/sp_24" android:textColor="@color/black" android:gravity="center" android:id="@id/tvTotalTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:includeFontPadding="false" android:fontFamily="@font/outfit_bold" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray_999" android:gravity="center" android:id="@id/tv_time_tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/APKTOOL_RENAMED_0x7f13060d" android:fontFamily="@font/outfit_regular" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+.class public final Lcom/bytedance/sdk/component/sf/pcc/pcc$pcc;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/sdk/component/sf/pcc/pcc;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "pcc"
+.end annotation
+
+
+# instance fields
+.field pcc:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public pcc()Lcom/bytedance/sdk/component/sf/pcc/pcc$pcc;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/bytedance/sdk/component/sf/pcc/pcc$pcc;->pcc:Z
+
+    return-object p0
+.end method
+
+.method public sf()Lcom/bytedance/sdk/component/sf/pcc/pcc;
+    .locals 1
+
+    new-instance v0, Lcom/bytedance/sdk/component/sf/pcc/pcc;
+
+    invoke-direct {v0, p0}, Lcom/bytedance/sdk/component/sf/pcc/pcc;-><init>(Lcom/bytedance/sdk/component/sf/pcc/pcc$pcc;)V
+
+    return-object v0
+.end method

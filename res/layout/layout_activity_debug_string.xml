@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:gravity="center" android:id="@id/tvChangeLanguage" android:background="@drawable/bg_gradient_main_blue_r_25_ripple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="Change language" android:fontFamily="@font/outfit_medium" android:paddingVertical="@dimen/dp_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/dp_20" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_10" android:paddingHorizontal="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tvChangeLanguage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

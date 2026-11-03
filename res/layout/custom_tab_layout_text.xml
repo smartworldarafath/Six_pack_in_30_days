@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="@dimen/dp_106" android:minWidth="@dimen/dp_87" android:maxLines="1" android:fontFamily="@font/outfit_medium" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_18" app:autoSizeMaxTextSize="@dimen/sp_14" app:autoSizeMinTextSize="6.0sp" app:autoSizeStepGranularity="1.0px" app:autoSizeTextType="uniform"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

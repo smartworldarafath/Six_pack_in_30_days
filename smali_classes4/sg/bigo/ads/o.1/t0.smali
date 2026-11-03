@@ -1,0 +1,184 @@
+.class public final Lsg/bigo/ads/o/t0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/webkit/ValueCallback;
+
+
+# instance fields
+.field public final synthetic a:Landroid/graphics/Bitmap;
+
+.field public final synthetic b:Lsg/bigo/ads/o/u0;
+
+
+# direct methods
+.method public constructor <init>(Lsg/bigo/ads/o/u0;Landroid/graphics/Bitmap;)V
+    .locals 0
+
+    iput-object p1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iput-object p2, p0, Lsg/bigo/ads/o/t0;->a:Landroid/graphics/Bitmap;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onReceiveValue(Ljava/lang/Object;)V
+    .locals 6
+
+    check-cast p1, Landroid/graphics/Bitmap;
+
+    new-instance v0, Lsg/bigo/ads/common/view/RoundedFrameLayout;
+
+    iget-object v1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object v1, v1, Lsg/bigo/ads/o/u0;->d:Landroid/view/ViewGroup;
+
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lsg/bigo/ads/common/view/RoundedFrameLayout;-><init>(Landroid/content/Context;)V
+
+    new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
+
+    iget-object v2, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget v2, v2, Lsg/bigo/ads/o/u0;->b:I
+
+    const/4 v3, -0x1
+
+    invoke-direct {v1, v3, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    iget-object v1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget v1, v1, Lsg/bigo/ads/o/u0;->e:I
+
+    int-to-float v1, v1
+
+    invoke-virtual {v0, v1}, Lsg/bigo/ads/common/view/RoundedFrameLayout;->setCornerRadius(F)V
+
+    iget-object v1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object v1, v1, Lsg/bigo/ads/o/u0;->d:Landroid/view/ViewGroup;
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2, v3}, Lsg/bigo/ads/O0/X;->a(Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/ViewGroup$LayoutParams;I)V
+
+    new-instance v1, Lsg/bigo/ads/common/view/RoundedImageView;
+
+    iget-object v4, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object v4, v4, Lsg/bigo/ads/o/u0;->d:Landroid/view/ViewGroup;
+
+    invoke-virtual {v4}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-direct {v1, v4}, Lsg/bigo/ads/common/view/RoundedImageView;-><init>(Landroid/content/Context;)V
+
+    new-instance v4, Landroid/widget/FrameLayout$LayoutParams;
+
+    iget-object v5, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget v5, v5, Lsg/bigo/ads/o/u0;->b:I
+
+    invoke-direct {v4, v3, v5}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v1, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    iget-object p1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget p1, p1, Lsg/bigo/ads/o/u0;->e:I
+
+    int-to-float p1, p1
+
+    invoke-virtual {v1, p1}, Lsg/bigo/ads/common/view/RoundedImageView;->setCornerRadius(F)V
+
+    sget-object p1, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
+
+    invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+
+    const/16 p1, 0x9
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    invoke-static {v1, v0, v2, v3}, Lsg/bigo/ads/O0/X;->a(Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/ViewGroup$LayoutParams;I)V
+
+    iget-object p1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object p1, p1, Lsg/bigo/ads/o/u0;->d:Landroid/view/ViewGroup;
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const/high16 v1, 0x41200000    # 10.0f
+
+    invoke-static {p1, v1}, Lsg/bigo/ads/O0/u;->a(Landroid/content/Context;F)I
+
+    move-result p1
+
+    iget-object v1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object v1, v1, Lsg/bigo/ads/o/u0;->c:Lsg/bigo/ads/common/view/RoundedImageView;
+
+    iget-object v4, p0, Lsg/bigo/ads/o/t0;->a:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    iget-object v1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object v1, v1, Lsg/bigo/ads/o/u0;->c:Lsg/bigo/ads/common/view/RoundedImageView;
+
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/FrameLayout$LayoutParams;
+
+    const/4 v4, -0x2
+
+    iput v4, v1, Landroid/widget/FrameLayout$LayoutParams;->width:I
+
+    iput v4, v1, Landroid/widget/FrameLayout$LayoutParams;->height:I
+
+    const/16 v4, 0x11
+
+    iput v4, v1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
+
+    invoke-virtual {v1, p1, p1, p1, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    iget-object p1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object p1, p1, Lsg/bigo/ads/o/u0;->c:Lsg/bigo/ads/common/view/RoundedImageView;
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    iget-object p1, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object p1, p1, Lsg/bigo/ads/o/u0;->c:Lsg/bigo/ads/common/view/RoundedImageView;
+
+    invoke-static {p1, v0, v2, v3}, Lsg/bigo/ads/O0/X;->a(Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/ViewGroup$LayoutParams;I)V
+
+    iget-object p0, p0, Lsg/bigo/ads/o/t0;->b:Lsg/bigo/ads/o/u0;
+
+    iget-object p0, p0, Lsg/bigo/ads/o/u0;->f:Lsg/bigo/ads/o/y0;
+
+    invoke-virtual {p0}, Lsg/bigo/ads/o/y0;->t()V
+
+    return-void
+.end method

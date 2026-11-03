@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/td_white" app:cardCornerRadius="2.0dp" app:cardElevation="0.0dp" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="300.0dp" android:layout_height="match_parent">
+        <TextView android:textSize="20.0sp" android:id="@id/tv_pop_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="24.0dp" android:layout_marginBottom="20.0dp" style="@style/td_text_black_med" />
+        <TextView android:textSize="16.0sp" android:id="@id/tv_pop_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" style="@style/td_text_gray_med" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/ly_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp">
+            <Button android:textSize="14.0sp" android:textColor="@color/td_colorPrimary" android:id="@id/btn_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:fontFamily="sans-serif-medium" style="?buttonBarPositiveButtonStyle" />
+            <Button android:textSize="14.0sp" android:textColor="@color/td_colorPrimary" android:id="@id/btn_right" android:layout_width="wrap_content" android:layout_height="40.0dp" android:fontFamily="sans-serif-medium" style="?buttonBarPositiveButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

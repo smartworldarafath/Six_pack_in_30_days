@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_30" android:paddingEnd="@dimen/dp_30" app:music_rv_radius="@dimen/dp_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <app.media.music.view.MusicDJRoundClipConstraintLayout android:background="@color/music_bg_color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" app:music_rv_radius="@dimen/dp_20">
+        <app.media.music.view.MusicDownloadFailView android:id="@id/musicDownloadFailView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <app.media.music.view.MusicDownloadingView android:id="@id/musicDownloadingView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </app.media.music.view.MusicDJRoundClipConstraintLayout>
+</FrameLayout>

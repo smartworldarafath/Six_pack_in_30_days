@@ -1,0 +1,1136 @@
+.class public final Ljn4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lk47;
+
+
+# static fields
+.field public static final w:Lm49;
+
+
+# instance fields
+.field public final a:Lj0;
+
+.field public b:Z
+
+.field public c:Ldn4;
+
+.field public final d:Lcq0;
+
+.field public final e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+.field public final f:Lmk5;
+
+.field public g:F
+
+.field public final h:Lfu;
+
+.field public final i:Z
+
+.field public j:Lfk4;
+
+.field public final k:Lgn4;
+
+.field public final l:Ltb0;
+
+.field public final m:Landroidx/compose/foundation/lazy/layout/c;
+
+.field public final n:Lrl4;
+
+.field public final o:Lom4;
+
+.field public final p:Lkt2;
+
+.field public final q:Llm4;
+
+.field public final r:Lll5;
+
+.field public final s:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+.field public final t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+.field public final u:Lll5;
+
+.field public v:Lgr;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    sget-object v0, Lgi;->E:Lgi;
+
+    sget-object v1, Lqm2;->v:Lqm2;
+
+    new-instance v2, Lz0;
+
+    const/4 v3, 0x3
+
+    invoke-direct {v2, v0, v3}, Lz0;-><init>(Ljava/lang/Object;I)V
+
+    const/4 v0, 0x1
+
+    invoke-static {v0, v1}, Lpf8;->f(ILjava/lang/Object;)V
+
+    sget-object v0, Lj17;->a:Lm49;
+
+    new-instance v0, Lm49;
+
+    const/16 v3, 0xd
+
+    invoke-direct {v0, v3, v2, v1}, Lm49;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
+    sput-object v0, Ljn4;->w:Lm49;
+
+    return-void
+.end method
+
+.method public constructor <init>(II)V
+    .locals 9
+
+    new-instance v0, Lj0;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v1, -0x1
+
+    iput v1, v0, Lj0;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Ljn4;->a:Lj0;
+
+    new-instance v0, Lcq0;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {p1}, Lsr1;->l0(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcq0;->b:Ljava/lang/Object;
+
+    invoke-static {p2}, Lsr1;->l0(I)Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    move-result-object p2
+
+    iput-object p2, v0, Lcq0;->c:Ljava/lang/Object;
+
+    new-instance p2, Lfm4;
+
+    invoke-direct {p2, p1}, Lfm4;-><init>(I)V
+
+    iput-object p2, v0, Lcq0;->e:Ljava/lang/Object;
+
+    iput-object v0, p0, Ljn4;->d:Lcq0;
+
+    sget-object p2, Lln4;->a:Ldn4;
+
+    sget-object v0, Le95;->E:Le95;
+
+    invoke-static {p2, v0}, Llg3;->t0(Ljava/lang/Object;Lnk7;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    move-result-object p2
+
+    iput-object p2, p0, Ljn4;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    new-instance p2, Lmk5;
+
+    invoke-direct {p2}, Lmk5;-><init>()V
+
+    iput-object p2, p0, Ljn4;->f:Lmk5;
+
+    new-instance p2, Ldh;
+
+    const/16 v0, 0x13
+
+    invoke-direct {p2, p0, v0}, Ldh;-><init>(Ljava/lang/Object;I)V
+
+    new-instance v0, Lfu;
+
+    invoke-direct {v0, p2}, Lfu;-><init>(Lrb3;)V
+
+    iput-object v0, p0, Ljn4;->h:Lfu;
+
+    const/4 p2, 0x1
+
+    iput-boolean p2, p0, Ljn4;->i:Z
+
+    new-instance p2, Lgn4;
+
+    invoke-direct {p2, p0}, Lgn4;-><init>(Ljn4;)V
+
+    iput-object p2, p0, Ljn4;->k:Lgn4;
+
+    new-instance p2, Ltb0;
+
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
+
+    iput-object p2, p0, Ljn4;->l:Ltb0;
+
+    new-instance p2, Landroidx/compose/foundation/lazy/layout/c;
+
+    invoke-direct {p2}, Landroidx/compose/foundation/lazy/layout/c;-><init>()V
+
+    iput-object p2, p0, Ljn4;->m:Landroidx/compose/foundation/lazy/layout/c;
+
+    new-instance p2, Lrl4;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p2, v0}, Lrl4;-><init>(I)V
+
+    iput-object p2, p0, Ljn4;->n:Lrl4;
+
+    new-instance p2, Lom4;
+
+    new-instance v0, Lok;
+
+    invoke-direct {v0, p0, p1}, Lok;-><init>(Ljn4;I)V
+
+    invoke-direct {p2, v0}, Lom4;-><init>(Lok;)V
+
+    iput-object p2, p0, Ljn4;->o:Lom4;
+
+    new-instance p1, Lkt2;
+
+    invoke-direct {p1, p0}, Lkt2;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Ljn4;->p:Lkt2;
+
+    new-instance p1, Llm4;
+
+    invoke-direct {p1}, Llm4;-><init>()V
+
+    iput-object p1, p0, Ljn4;->q:Llm4;
+
+    invoke-static {}, Lvs6;->q()Lll5;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ljn4;->r:Lll5;
+
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    sget-object p2, Le95;->M:Le95;
+
+    invoke-static {p1, p2}, Llg3;->t0(Ljava/lang/Object;Lnk7;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    move-result-object v0
+
+    iput-object v0, p0, Ljn4;->s:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-static {p1, p2}, Llg3;->t0(Ljava/lang/Object;Lnk7;)Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ljn4;->t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-static {}, Lvs6;->q()Lll5;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ljn4;->u:Lll5;
+
+    sget-object v1, Lum8;->a:Lif8;
+
+    const/4 p1, 0x0
+
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    new-instance v0, Lgr;
+
+    new-instance v3, Lkr;
+
+    invoke-direct {v3, p1}, Lkr;-><init>(F)V
+
+    const-wide/high16 v4, -0x8000000000000000L
+
+    const-wide/high16 v6, -0x8000000000000000L
+
+    const/4 v8, 0x0
+
+    invoke-direct/range {v0 .. v8}, Lgr;-><init>(Lif8;Ljava/lang/Object;Lor;JJZ)V
+
+    iput-object v0, p0, Ljn4;->v:Lgr;
+
+    return-void
+.end method
+
+.method public static f(Ljn4;ILmy7;)Ljava/lang/Object;
+    .locals 2
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance v0, Lin4;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, p1, v1}, Lin4;-><init>(Ljn4;ILwj1;)V
+
+    sget-object p1, Lsl5;->a:Lsl5;
+
+    invoke-virtual {p0, p1, v0, p2}, Ljn4;->c(Lsl5;Lwb3;Lyj1;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    sget-object p1, Lxk1;->a:Lxk1;
+
+    if-ne p0, p1, :cond_0
+
+    return-object p0
+
+    :cond_0
+    sget-object p0, Lxh8;->a:Lxh8;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(Ldn4;ZZ)V
+    .locals 10
+
+    iget-object v0, p1, Ldn4;->a:Len4;
+
+    if-nez p2, :cond_0
+
+    iget-boolean v1, p0, Ljn4;->b:Z
+
+    if-eqz v1, :cond_0
+
+    iput-object p1, p0, Ljn4;->c:Ldn4;
+
+    return-void
+
+    :cond_0
+    const/4 v1, 0x1
+
+    if-eqz p2, :cond_1
+
+    iput-boolean v1, p0, Ljn4;->b:Z
+
+    :cond_1
+    iget-object v2, p1, Ldn4;->j:Ljava/util/List;
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_2
+
+    iget v4, v0, Len4;->a:I
+
+    goto :goto_0
+
+    :cond_2
+    move v4, v3
+
+    :goto_0
+    if-nez v4, :cond_4
+
+    iget v4, p1, Ldn4;->b:I
+
+    if-eqz v4, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    move v4, v3
+
+    goto :goto_2
+
+    :cond_4
+    :goto_1
+    move v4, v1
+
+    :goto_2
+    iget-object v5, p0, Ljn4;->t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    invoke-virtual {v5, v4}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    iget-boolean v4, p1, Ldn4;->c:Z
+
+    iget-object v5, p0, Ljn4;->s:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    invoke-virtual {v5, v4}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    iget v4, p0, Ljn4;->g:F
+
+    iget v5, p1, Ldn4;->d:F
+
+    sub-float/2addr v4, v5
+
+    iput v4, p0, Ljn4;->g:F
+
+    iget-object v4, p0, Ljn4;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {v4, p1}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->setValue(Ljava/lang/Object;)V
+
+    const/16 v4, 0x29
+
+    const-string v5, "scrollOffset should be non-negative ("
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    iget-object v8, p0, Ljn4;->d:Lcq0;
+
+    if-eqz p3, :cond_6
+
+    iget p3, p1, Ldn4;->b:I
+
+    int-to-float v0, p3
+
+    cmpl-float v0, v0, v6
+
+    if-ltz v0, :cond_5
+
+    iget-object v0, v8, Lcq0;->c:Ljava/lang/Object;
+
+    check-cast v0, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;
+
+    invoke-virtual {v0, p3}, Landroidx/compose/runtime/ParcelableSnapshotMutableIntState;->j(I)V
+
+    goto/16 :goto_5
+
+    :cond_5
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_6
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    if-eqz v0, :cond_7
+
+    iget-object p3, v0, Len4;->g:Ljava/lang/Object;
+
+    goto :goto_3
+
+    :cond_7
+    move-object p3, v7
+
+    :goto_3
+    iput-object p3, v8, Lcq0;->d:Ljava/lang/Object;
+
+    iget-boolean p3, v8, Lcq0;->a:Z
+
+    if-nez p3, :cond_8
+
+    iget p3, p1, Ldn4;->m:I
+
+    if-lez p3, :cond_a
+
+    :cond_8
+    iput-boolean v1, v8, Lcq0;->a:Z
+
+    iget p3, p1, Ldn4;->b:I
+
+    int-to-float v9, p3
+
+    cmpl-float v9, v9, v6
+
+    if-ltz v9, :cond_12
+
+    if-eqz v0, :cond_9
+
+    iget v3, v0, Len4;->a:I
+
+    :cond_9
+    invoke-virtual {v8, v3, p3}, Lcq0;->h(II)V
+
+    :cond_a
+    iget-boolean p3, p0, Ljn4;->i:Z
+
+    if-eqz p3, :cond_d
+
+    iget-object p3, p0, Ljn4;->a:Lj0;
+
+    iget v0, p3, Lj0;->a:I
+
+    const/4 v3, -0x1
+
+    if-eq v0, v3, :cond_d
+
+    invoke-interface {v2}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_d
+
+    iget-boolean v0, p3, Lj0;->b:Z
+
+    if-eqz v0, :cond_b
+
+    invoke-static {v2}, Lg71;->L0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Len4;
+
+    iget v0, v0, Len4;->a:I
+
+    add-int/2addr v0, v1
+
+    goto :goto_4
+
+    :cond_b
+    invoke-static {v2}, Lg71;->D0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Len4;
+
+    iget v0, v0, Len4;->a:I
+
+    sub-int/2addr v0, v1
+
+    :goto_4
+    iget v2, p3, Lj0;->a:I
+
+    if-eq v2, v0, :cond_d
+
+    iput v3, p3, Lj0;->a:I
+
+    iget-object v0, p3, Lj0;->c:Ljava/lang/Object;
+
+    check-cast v0, Lnm4;
+
+    if-eqz v0, :cond_c
+
+    invoke-interface {v0}, Lnm4;->cancel()V
+
+    :cond_c
+    iput-object v7, p3, Lj0;->c:Ljava/lang/Object;
+
+    :cond_d
+    :goto_5
+    if-eqz p2, :cond_11
+
+    iget p2, p1, Ldn4;->e:F
+
+    iget-object p3, p1, Ldn4;->h:Ls62;
+
+    iget-object p1, p1, Ldn4;->g:Lm8;
+
+    sget-object v0, Lln4;->a:Ldn4;
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-interface {p3, v0}, Ls62;->h0(F)F
+
+    move-result p3
+
+    cmpg-float p3, p2, p3
+
+    if-gtz p3, :cond_e
+
+    goto :goto_9
+
+    :cond_e
+    invoke-static {}, Llm1;->I()Lbk7;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_f
+
+    invoke-virtual {p3}, Lbk7;->f()Lrb3;
+
+    move-result-object v0
+
+    goto :goto_6
+
+    :cond_f
+    move-object v0, v7
+
+    :goto_6
+    invoke-static {p3}, Llm1;->S(Lbk7;)Lbk7;
+
+    move-result-object v2
+
+    :try_start_0
+    iget-object v3, p0, Ljn4;->v:Lgr;
+
+    iget-object v3, v3, Lgr;->b:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {v3}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Number;
+
+    invoke-virtual {v3}, Ljava/lang/Number;->floatValue()F
+
+    move-result v3
+
+    iget-object v4, p0, Ljn4;->v:Lgr;
+
+    iget-boolean v5, v4, Lgr;->f:Z
+
+    const/4 v8, 0x3
+
+    if-eqz v5, :cond_10
+
+    sub-float/2addr v3, p2
+
+    const/16 p2, 0x1e
+
+    invoke-static {v4, v3, v6, p2}, Leab;->I(Lgr;FFI)Lgr;
+
+    move-result-object p2
+
+    iput-object p2, p0, Ljn4;->v:Lgr;
+
+    new-instance p2, Lin4;
+
+    invoke-direct {p2, p0, v7, v1}, Lin4;-><init>(Ljn4;Lwj1;I)V
+
+    invoke-static {p1, v7, p2, v8}, Lem7;->p0(Lwk1;Lmk1;Lwb3;I)Lmo7;
+
+    goto :goto_7
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_8
+
+    :cond_10
+    new-instance v1, Lgr;
+
+    sget-object v3, Lum8;->a:Lif8;
+
+    neg-float p2, p2
+
+    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p2
+
+    const/16 v4, 0x3c
+
+    invoke-direct {v1, v3, p2, v7, v4}, Lgr;-><init>(Lif8;Ljava/lang/Object;Lor;I)V
+
+    iput-object v1, p0, Ljn4;->v:Lgr;
+
+    new-instance p2, Lin4;
+
+    const/4 v1, 0x2
+
+    invoke-direct {p2, p0, v7, v1}, Lin4;-><init>(Ljn4;Lwj1;I)V
+
+    invoke-static {p1, v7, p2, v8}, Lem7;->p0(Lwk1;Lmk1;Lwb3;I)Lmo7;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :goto_7
+    invoke-static {p3, v2, v0}, Llm1;->V(Lbk7;Lbk7;Lrb3;)V
+
+    goto :goto_9
+
+    :goto_8
+    invoke-static {p3, v2, v0}, Llm1;->V(Lbk7;Lbk7;Lrb3;)V
+
+    throw p0
+
+    :cond_11
+    :goto_9
+    return-void
+
+    :cond_12
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final b()Ldn4;
+    .locals 0
+
+    iget-object p0, p0, Ljn4;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {p0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ldn4;
+
+    return-object p0
+.end method
+
+.method public final c(Lsl5;Lwb3;Lyj1;)Ljava/lang/Object;
+    .locals 6
+
+    instance-of v0, p3, Lhn4;
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p3
+
+    check-cast v0, Lhn4;
+
+    iget v1, v0, Lhn4;->w:I
+
+    const/high16 v2, -0x80000000
+
+    and-int v3, v1, v2
+
+    if-eqz v3, :cond_0
+
+    sub-int/2addr v1, v2
+
+    iput v1, v0, Lhn4;->w:I
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Lhn4;
+
+    invoke-direct {v0, p0, p3}, Lhn4;-><init>(Ljn4;Lyj1;)V
+
+    :goto_0
+    iget-object p3, v0, Lhn4;->u:Ljava/lang/Object;
+
+    iget v1, v0, Lhn4;->w:I
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    sget-object v5, Lxk1;->a:Lxk1;
+
+    if-eqz v1, :cond_3
+
+    if-eq v1, v3, :cond_2
+
+    if-ne v1, v2, :cond_1
+
+    invoke-static {p3}, Lt49;->P(Ljava/lang/Object;)V
+
+    goto :goto_3
+
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-static {p0}, Lk;->m(Ljava/lang/String;)V
+
+    return-object v4
+
+    :cond_2
+    iget-object p0, v0, Lhn4;->t:Lmy7;
+
+    move-object p2, p0
+
+    check-cast p2, Lwb3;
+
+    iget-object p1, v0, Lhn4;->s:Lsl5;
+
+    iget-object p0, v0, Lhn4;->r:Ljn4;
+
+    invoke-static {p3}, Lt49;->P(Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    :cond_3
+    invoke-static {p3}, Lt49;->P(Ljava/lang/Object;)V
+
+    iput-object p0, v0, Lhn4;->r:Ljn4;
+
+    iput-object p1, v0, Lhn4;->s:Lsl5;
+
+    move-object p3, p2
+
+    check-cast p3, Lmy7;
+
+    iput-object p3, v0, Lhn4;->t:Lmy7;
+
+    iput v3, v0, Lhn4;->w:I
+
+    iget-object p3, p0, Ljn4;->l:Ltb0;
+
+    invoke-virtual {p3, v0}, Ltb0;->o(Lyj1;)Ljava/lang/Object;
+
+    move-result-object p3
+
+    if-ne p3, v5, :cond_4
+
+    goto :goto_2
+
+    :cond_4
+    :goto_1
+    iget-object p0, p0, Ljn4;->h:Lfu;
+
+    iput-object v4, v0, Lhn4;->r:Ljn4;
+
+    iput-object v4, v0, Lhn4;->s:Lsl5;
+
+    iput-object v4, v0, Lhn4;->t:Lmy7;
+
+    iput v2, v0, Lhn4;->w:I
+
+    invoke-virtual {p0, p1, p2, v0}, Lfu;->c(Lsl5;Lwb3;Lyj1;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-ne p0, v5, :cond_5
+
+    :goto_2
+    return-object v5
+
+    :cond_5
+    :goto_3
+    sget-object p0, Lxh8;->a:Lxh8;
+
+    return-object p0
+.end method
+
+.method public final e(FLdn4;)V
+    .locals 10
+
+    iget-boolean v0, p0, Ljn4;->i:Z
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, p2, Ldn4;->j:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_7
+
+    const/4 v1, 0x0
+
+    cmpg-float v1, p1, v1
+
+    const/4 v2, 0x1
+
+    if-gez v1, :cond_0
+
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    if-eqz v1, :cond_1
+
+    invoke-static {v0}, Lg71;->L0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Len4;
+
+    iget v3, v3, Len4;->a:I
+
+    add-int/2addr v3, v2
+
+    :goto_1
+    move v6, v3
+
+    goto :goto_2
+
+    :cond_1
+    invoke-static {v0}, Lg71;->D0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Len4;
+
+    iget v3, v3, Len4;->a:I
+
+    sub-int/2addr v3, v2
+
+    goto :goto_1
+
+    :goto_2
+    if-ltz v6, :cond_7
+
+    iget v2, p2, Ldn4;->m:I
+
+    if-ge v6, v2, :cond_7
+
+    iget-object v2, p0, Ljn4;->a:Lj0;
+
+    iget v3, v2, Lj0;->a:I
+
+    if-eq v6, v3, :cond_5
+
+    iget-boolean v3, v2, Lj0;->b:Z
+
+    if-eq v3, v1, :cond_2
+
+    iget-object v3, v2, Lj0;->c:Ljava/lang/Object;
+
+    check-cast v3, Lnm4;
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v3}, Lnm4;->cancel()V
+
+    :cond_2
+    iput-boolean v1, v2, Lj0;->b:Z
+
+    iput v6, v2, Lj0;->a:I
+
+    iget-object p0, p0, Ljn4;->p:Lkt2;
+
+    iget-object p0, p0, Lkt2;->a:Ljava/lang/Object;
+
+    check-cast p0, Ljn4;
+
+    invoke-static {}, Llm1;->I()Lbk7;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_3
+
+    invoke-virtual {v3}, Lbk7;->f()Lrb3;
+
+    move-result-object v4
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v4, 0x0
+
+    :goto_3
+    invoke-static {v3}, Llm1;->S(Lbk7;)Lbk7;
+
+    move-result-object v5
+
+    :try_start_0
+    iget-object v7, p0, Ljn4;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {v7}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ldn4;
+
+    iget-wide v7, v7, Ldn4;->i:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {v3, v5, v4}, Llm1;->V(Lbk7;Lbk7;Lrb3;)V
+
+    iget-object p0, p0, Ljn4;->o:Lom4;
+
+    iget-object v5, p0, Lom4;->c:Lrv;
+
+    if-eqz v5, :cond_4
+
+    iget-object v9, p0, Lom4;->b:Lqb6;
+
+    new-instance v4, Lpb6;
+
+    invoke-direct/range {v4 .. v9}, Lpb6;-><init>(Lrv;IJLqb6;)V
+
+    iget-object p0, v5, Lrv;->d:Ljava/lang/Object;
+
+    check-cast p0, Lsb6;
+
+    invoke-interface {p0, v4}, Lsb6;->m(Lpb6;)V
+
+    goto :goto_4
+
+    :cond_4
+    sget-object v4, Llj2;->d:Llj2;
+
+    :goto_4
+    iput-object v4, v2, Lj0;->c:Ljava/lang/Object;
+
+    goto :goto_5
+
+    :catchall_0
+    move-exception v0
+
+    move-object p0, v0
+
+    invoke-static {v3, v5, v4}, Llm1;->V(Lbk7;Lbk7;Lrb3;)V
+
+    throw p0
+
+    :cond_5
+    :goto_5
+    if-eqz v1, :cond_6
+
+    invoke-static {v0}, Lg71;->L0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Len4;
+
+    iget v0, p2, Ldn4;->p:I
+
+    iget v1, p0, Len4;->j:I
+
+    iget p0, p0, Len4;->k:I
+
+    add-int/2addr v1, p0
+
+    add-int/2addr v1, v0
+
+    iget p0, p2, Ldn4;->l:I
+
+    sub-int/2addr v1, p0
+
+    int-to-float p0, v1
+
+    neg-float p1, p1
+
+    cmpg-float p0, p0, p1
+
+    if-gez p0, :cond_7
+
+    iget-object p0, v2, Lj0;->c:Ljava/lang/Object;
+
+    check-cast p0, Lnm4;
+
+    if-eqz p0, :cond_7
+
+    invoke-interface {p0}, Lnm4;->f()V
+
+    return-void
+
+    :cond_6
+    invoke-static {v0}, Lg71;->D0(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Len4;
+
+    iget p2, p2, Ldn4;->k:I
+
+    iget p0, p0, Len4;->j:I
+
+    sub-int/2addr p2, p0
+
+    int-to-float p0, p2
+
+    cmpg-float p0, p0, p1
+
+    if-gez p0, :cond_7
+
+    iget-object p0, v2, Lj0;->c:Ljava/lang/Object;
+
+    check-cast p0, Lnm4;
+
+    if-eqz p0, :cond_7
+
+    invoke-interface {p0}, Lnm4;->f()V
+
+    :cond_7
+    return-void
+.end method
+
+.method public final h()Z
+    .locals 0
+
+    iget-object p0, p0, Ljn4;->h:Lfu;
+
+    invoke-virtual {p0}, Lfu;->h()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final j()Z
+    .locals 0
+
+    iget-object p0, p0, Ljn4;->t:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {p0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final l()Z
+    .locals 0
+
+    iget-object p0, p0, Ljn4;->s:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    invoke-virtual {p0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final m(F)F
+    .locals 0
+
+    iget-object p0, p0, Ljn4;->h:Lfu;
+
+    invoke-virtual {p0, p1}, Lfu;->m(F)F
+
+    move-result p0
+
+    return p0
+.end method

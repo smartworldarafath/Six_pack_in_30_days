@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main_viewPagerContainer" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <sixpack.sixpackabs.absworkout.views.ViewPagerFix android:id="@id/main_viewpager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:overScrollMode="never" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llPointer" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_alignParentTop="true">
+            <com.zjlib.thirtydaylib.views.ViewPagerIndicator android:id="@id/indicator" android:background="@color/no_color" android:layout_width="145.0dp" android:layout_height="@dimen/dp_6" app:vpi_default_color="#eeeeee" app:vpi_gradient_end="@color/gradient_end" app:vpi_gradient_start="@color/gradient_start" app:vpi_indicatorType="CIRCLE_LINE" app:vpi_length="@dimen/dp_20" app:vpi_radius="@dimen/dp_3" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

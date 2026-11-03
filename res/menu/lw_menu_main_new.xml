@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_recent" android:visible="false" android:title="" android:contentDescription=" " app:actionLayout="@layout/layout_main_menu_recent" app:showAsAction="always" />
+    <item android:id="@id/action_logger" android:title="" android:contentDescription=" " app:actionLayout="@layout/layout_main_menu_logger" app:showAsAction="always" />
+</menu>

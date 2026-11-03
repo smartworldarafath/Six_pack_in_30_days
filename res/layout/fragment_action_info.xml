@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/info_main_container" android:background="#30384d" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/info_header_placeHolder" android:layout_width="match_parent" android:layout_height="64.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton android:id="@id/info_btn_back" app:layout_constraintBottom_toBottomOf="@id/info_header_placeHolder" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="@id/info_header_placeHolder" style="@style/Wp.info_btn_back" />
+    <LinearLayout android:id="@id/info_btn_watch_video" app:layout_constraintBottom_toBottomOf="@id/info_header_placeHolder" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/info_header_placeHolder" style="@style/Wp.info_btn_watch_video">
+        <ImageView android:id="@id/info_iv_watch_video" style="@style/Wp.info_iv_watch_video" />
+        <TextView android:id="@id/info_tv_watch_video" style="@style/Wp.info_tv_watch_video" />
+    </LinearLayout>
+    <View android:id="@id/info_webview_placeHolder" android:background="@color/white" android:layout_width="0.0dp" android:layout_height="@dimen/wp_info_webview_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/info_header_placeHolder" />
+    <FrameLayout android:id="@id/info_webview_container" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/info_webview_placeHolder" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/info_webview_placeHolder" />
+    <ImageView android:id="@id/info_iv_action" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/info_webview_placeHolder" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/info_webview_placeHolder" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/info_webview_placeHolder">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/info_tv_action_name" app:layout_constraintBottom_toTopOf="@id/info_tv_alternation" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Wp.info_tv_action_name" />
+            <TextView android:id="@id/info_tv_alternation" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/info_tv_action_name" style="@style/Wp.info_tv_alternation" />
+            <TextView android:id="@id/info_tv_introduce" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/info_tv_alternation" style="@style/Wp.info_tv_introduce" />
+            <androidx.cardview.widget.CardView android:id="@id/info_native_ad_layout" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/info_tv_introduce" style="@style/Wp.info_native_ad_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

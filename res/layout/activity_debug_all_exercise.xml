@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:gravity="center" android:id="@id/tv_lottie_men" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="2D" app:layout_constraintEnd_toStartOf="@id/tv_3d_men" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox android:gravity="center" android:id="@id/tv_3d_men" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="3D Male" app:layout_constraintEnd_toStartOf="@id/tv_3d_women" app:layout_constraintStart_toEndOf="@id/tv_lottie_men" app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox android:gravity="center" android:id="@id/tv_3d_women" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="3D Female" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_3d_men" app:layout_constraintTop_toTopOf="parent" />
+    <CheckBox android:gravity="center" android:id="@id/tv_live_man" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="Live Male" app:layout_constraintStart_toStartOf="@id/tv_lottie_men" app:layout_constraintTop_toBottomOf="@id/tv_lottie_men" />
+    <CheckBox android:gravity="center" android:id="@id/tv_live_women" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="Live Female" app:layout_constraintStart_toEndOf="@id/tv_live_man" app:layout_constraintTop_toTopOf="@id/tv_live_man" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_live_man" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_downloading_mask" android:background="#7f000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
