@@ -1290,11 +1290,9 @@
     return-void
 
     :catch_3
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    move-exception v0
 
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
 .end method

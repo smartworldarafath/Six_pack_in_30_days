@@ -193,19 +193,11 @@
 .method public static h(ILjava/lang/String;)Ljava/lang/RuntimeException;
     .locals 1
 
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    new-instance v0, Ljava/lang/RuntimeException;
 
-    move-result v0
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    invoke-static {p0}, Ljava/lang/System;->exit(I)V
-
-    new-instance p0, Ljava/lang/RuntimeException;
-
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    return-object p0
+    return-object v0
 .end method
 
 .method public static i(Ljava/lang/Number;Ljava/lang/String;)Ljava/lang/String;
