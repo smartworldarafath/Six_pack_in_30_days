@@ -30,6 +30,7 @@ build/
 dist/
 bin/
 out/
+original_backup/
 *.apk
 *.aab
 *.idsig
